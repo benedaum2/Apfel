@@ -9,7 +9,7 @@ in the Matlab command shell:
    makes the folder structure known to matlab
 
 2. a = apfel('examples/cantilever_lin_quad_lag23.xml')
-   this starts starts the simulation of the predefined xml-input file 
+   this starts the simulation of the predefined xml-input file 
    'cantilever_lin_quad_lag23.xml'. A describtion of this particular 
    problem is provided (in german) in chapter 12 of my master's thesis,
    see p. 53 in Diplomarbeit_Daum.pdf.
