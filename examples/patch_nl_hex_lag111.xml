@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisPlasticity"/>
+  <flow_rule class="VonMises" sigma_f="1" />
+  <time_step>
+    <ts time="0.2500000000" >  1</ts>
+    <ts time="0.5000000000" >  2</ts>
+    <ts time="0.7500000000" >  3</ts>
+    <ts time="1.0000000000" >  4</ts> 
+  </time_step>
+  <global dim="3"/>
+  <node>
+    <n x="  0.00000000" y="  0.00000000" z="  0.00000000"> 01</n>
+    <n x="100.00000000" y="  0.00000000" z="  0.00000000"> 02</n>
+    <n x="  0.00000000" y="  0.00000000" z=" 10.00000000"> 03</n>
+    <n x="100.00000000" y="  0.00000000" z=" 10.00000000"> 04</n>
+    <n x="  0.00000000" y="100.00000000" z="  0.00000000"> 05</n>
+    <n x="100.00000000" y="100.00000000" z="  0.00000000"> 06</n>
+    <n x="  0.00000000" y="100.00000000" z=" 10.00000000"> 07</n>
+    <n x="100.00000000" y="100.00000000" z=" 10.00000000"> 08</n>   
+  </node>
+  <element>
+    <e gnn="01 02 05 06 03 04 07 08" et="1" m="1" > 01</e> 
+  </element>
+  <element_type>
+    <et>
+      1
+      <type  class="plasticity.element.Hexahedron" />
+      <!-- <type  class="model.element.Hexahedron" /> -->
+      <shape class="LagrangeHexahedron" />
+      <el_order  value="1, 1, 1" />      
+      <int_order value="2, 2, 1" />
+    </et>
+
+  </element_type>
+  <material>
+    <m>
+      1
+      <data field="E"  func="str2double" value="2000" />
+      <data field="nu" func="str2double" value="0.3" />
+    </m>
+  </material>
+  <boundary_condition>       
+    <bc gnn="01" dir="x" typ="d" val="    0"> 01</bc>
+    <bc gnn="01" dir="y" typ="d" val="    0"> 02</bc>
+    <bc gnn="01" dir="z" typ="d" val="    0"> 03</bc>
+    <bc gnn="02" dir="x" typ="d" val="    0"> 04</bc>
+    <bc gnn="02" dir="y" typ="d" val="    0"> 05</bc>
+    <bc gnn="02" dir="z" typ="d" val="    0"> 06</bc>
+    <bc gnn="03" dir="x" typ="d" val="    0"> 07</bc>
+    <bc gnn="03" dir="y" typ="d" val="    0"> 08</bc>
+    <bc gnn="03" dir="z" typ="d" val="    0"> 09</bc>
+    <bc gnn="04" dir="x" typ="d" val="    0"> 10</bc>
+    <bc gnn="04" dir="y" typ="d" val="    0"> 11</bc>
+    <bc gnn="04" dir="z" typ="d" val="    0"> 12</bc>
+
+    <bc gnn="05" dir="x" typ="d" val="    0"> 13</bc>
+    <bc gnn="05" dir="y" typ="d" val="-0.10"> 14</bc>
+    <bc gnn="05" dir="z" typ="d" val="    0"> 15</bc>
+    <bc gnn="06" dir="x" typ="d" val="    0"> 16</bc>
+    <bc gnn="06" dir="y" typ="d" val="-0.10"> 17</bc>
+    <bc gnn="06" dir="z" typ="d" val="    0"> 18</bc>
+    <bc gnn="07" dir="x" typ="d" val="    0"> 19</bc>
+    <bc gnn="07" dir="y" typ="d" val="-0.10"> 20</bc>
+    <bc gnn="07" dir="z" typ="d" val="    0"> 21</bc>
+    <bc gnn="08" dir="x" typ="d" val="    0"> 22</bc>
+    <bc gnn="08" dir="y" typ="d" val="-0.10"> 23</bc>
+    <bc gnn="08" dir="z" typ="d" val="    0"> 24</bc>
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

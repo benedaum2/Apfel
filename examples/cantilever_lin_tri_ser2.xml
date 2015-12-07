@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisLinear"/>
+  <global dim="2"/>
+  <node>
+    <n x="0.0000000000" y="0.0000000000"> 01</n>
+    <n x="50.000000000" y="0.0000000000"> 02</n>
+    <n x="100.00000000" y="0.0000000000"> 03</n>
+    <n x="0.0000000000" y="50.000000000"> 04</n>
+    <n x="50.000000000" y="50.000000000"> 05</n>
+    <n x="100.00000000" y="50.000000000"> 06</n>
+    <n x="0.0000000000" y="100.00000000"> 07</n>
+    <n x="50.000000000" y="100.00000000"> 08</n>
+    <n x="100.00000000" y="100.00000000"> 09</n>
+  </node>
+  <element>
+    <e gnn="01 03 07   02 05 04" et="1" m="1" >1</e>
+    <e gnn="03 09 07   06 08 05" et="1" m="1" >2</e>
+  </element>
+  <element_type>
+    <et>
+      1
+      <type  class= "model.element.Triangle" />
+      <shape class= "SerendipityTriangle" />
+      <el_order  value= "2"/>
+      <int_order value= "2"/> 
+      <data field="thickness" func="str2double" value="10" />      
+    </et>
+  </element_type>
+  <material>
+    <m>
+      1
+      <data field="E"  func="str2double" value="2000" />
+      <data field="nu" func="str2double" value="0" />
+    </m>
+  </material>
+  <boundary_condition>
+    <bc gnn="01" dir="x" typ="d" val="   0"> 01</bc>
+    <bc gnn="01" dir="y" typ="d" val="   0"> 02</bc>
+    <bc gnn="04" dir="x" typ="d" val="   0"> 03</bc>
+    <bc gnn="04" dir="y" typ="d" val="   0"> 04</bc>
+    <bc gnn="07" dir="x" typ="d" val="   0"> 05</bc>
+    <bc gnn="07" dir="y" typ="d" val="   0"> 06</bc>
+    <bc gnn="09" dir="y" typ="n" val="-100"> 07</bc>
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+

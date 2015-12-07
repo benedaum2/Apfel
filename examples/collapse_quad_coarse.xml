@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisPlasticity"/>
+  <flow_rule>
+    <type class="plasticity.flowrule.VonMises" />
+    <data field="sigma_f" func="str2double" value="1" />
+  </flow_rule>
+  <!--
+  <flow_rule>
+    <type class="plasticity.flowrule.Hill" />
+    <data field="f" func="str2double" value="-0.1000000000e-3" />
+    <data field="g" func="str2double" value=" 0.2000000000e-3" />
+    <data field="h" func="str2double" value=" 0.2000000000e-3" />
+    <data field="l" func="str2double" value=" 0.1500000000e-3" />
+    <data field="m" func="str2double" value=" 0.1500000000e-3" />
+    <data field="n" func="str2double" value=" 0.1500000000e-3" /> 
+  </flow_rule>  
+  -->
+  <time_step>     
+    <ts time="0.6000" >001</ts>
+    <ts time="0.7500" >002</ts>
+    <ts time="0.9000" >003</ts>
+    <ts time="0.9250" >004</ts>
+    <ts time="0.9500" >005</ts>
+    <ts time="0.9750" >006</ts>
+    <ts time="1.0000" >007</ts>
+  </time_step>
+  <global dim="2"/>
+  <node>
+    <n x=" 000" y="-010">01</n>
+    <n x=" 015" y="-010">02</n>
+    <n x=" 030" y="-010">03</n>
+    <n x=" 045" y="-010">04</n>
+    <n x=" 060" y="-010">05</n>
+    <n x=" 065" y="-010">06</n>
+    <n x=" 070" y="-010">07</n>
+    <n x=" 075" y="-010">08</n>
+    <n x=" 080" y="-010">09</n>
+    <n x=" 085" y="-010">10</n>
+    <n x=" 090" y="-010">11</n>
+    <n x=" 095" y="-010">12</n>
+    <n x=" 100" y="-010">13</n>
+
+    <n x=" 000" y=" 000">14</n>
+    <n x=" 015" y=" 000">15</n>
+    <n x=" 030" y=" 000">16</n>
+    <n x=" 045" y=" 000">17</n>
+    <n x=" 060" y=" 000">18</n>
+    <n x=" 065" y=" 000">19</n>
+    <n x=" 070" y=" 000">20</n>
+    <n x=" 075" y=" 000">21</n>
+    <n x=" 080" y=" 000">22</n>
+    <n x=" 085" y=" 000">23</n>
+    <n x=" 090" y=" 000">24</n>
+    <n x=" 095" y=" 000">25</n>
+    <n x=" 100" y=" 000">26</n>
+
+    <n x=" 000" y=" 010">27</n>
+    <n x=" 015" y=" 010">28</n>
+    <n x=" 030" y=" 010">29</n>
+    <n x=" 045" y=" 010">30</n>
+    <n x=" 060" y=" 010">31</n>
+    <n x=" 065" y=" 010">32</n>
+    <n x=" 070" y=" 010">33</n>
+    <n x=" 075" y=" 010">34</n>
+    <n x=" 080" y=" 010">35</n>
+    <n x=" 085" y=" 010">36</n>
+    <n x=" 090" y=" 010">37</n>
+    <n x=" 095" y=" 010">38</n>
+    <n x=" 100" y=" 010">39</n>
+  </node>
+  <element>
+    <e gnn="01 02 03 14 15 16 27 28 29 " et="1" m="1">01</e>
+    <e gnn="03 04 05 16 17 18 29 30 31 " et="1" m="1">02</e>
+    <e gnn="05 06 07 18 19 20 31 32 33 " et="2" m="1">03</e>
+    <e gnn="07 08 09 20 21 22 33 34 35 " et="2" m="1">04</e>
+    <e gnn="09 10 11 22 23 24 35 36 37 " et="2" m="1">05</e>
+    <e gnn="11 12 13 24 25 26 37 38 39 " et="2" m="1">06</e>
+  </element>
+  <element_type>
+    <et>
+      1
+      <type  class="plasticity.element.Quadrilateral" /> -->
+      <shape class="LagrangeQuadrilateral" />
+      <el_order  value="2, 2" />      
+      <int_order value="3, 3" />
+      <data field="plain_strain" func="str2double" value="1" />
+    </et>
+    <et>
+      2
+      <type  class="plasticity.element.Quadrilateral" /> -->
+      <shape class="LagrangeQuadrilateral" />
+      <el_order  value="2, 2" />      
+      <int_order value="3, 6" />
+      <data field="plain_strain" func="str2double" value="1" />
+      <data field="newton_cotes" func="str2double" value="1" />
+    </et>
+  </element_type>
+  <material>
+    <m>
+      1
+      <data field="E"  func="str2double" value="2000" />
+      <data field="nu" func="str2double" value="0.3" />
+    </m>
+  </material>
+  <boundary_condition>
+    <bc gnn="13" dir="x" typ="d" val="      0">01</bc>
+    <bc gnn="26" dir="x" typ="d" val="      0">02</bc>
+    <bc gnn="39" dir="x" typ="d" val="      0">03</bc>
+
+    <bc gnn="01" dir="y" typ="d" val="      0">04</bc>
+    <bc gnn="14" dir="y" typ="d" val="      0">05</bc>
+    <bc gnn="27" dir="y" typ="d" val="      0">06</bc>
+  
+    <bc gnn="13" dir="y" typ="n" val="-0.4000">07</bc>
+    <bc gnn="26" dir="y" typ="n" val="-0.4000">08</bc>
+    <bc gnn="39" dir="y" typ="n" val="-0.4000">09</bc>
+    -->
+    <!--  
+    <bc gnn="13" dir="y" typ="n" val="-0.3333">07</bc>
+    <bc gnn="26" dir="y" typ="n" val="-0.3333">08</bc>
+    <bc gnn="39" dir="y" typ="n" val="-0.3333">09</bc>
+    -->
+    <!--  
+    <bc gnn="26" dir="y" typ="d" val="-0.2500">07</bc>
+    -->
+    <!--
+    <bc gnn="26" dir="y" typ="d" val="-0.2200">07</bc>
+    -->
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

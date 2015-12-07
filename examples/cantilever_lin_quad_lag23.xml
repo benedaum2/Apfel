@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisLinear"/>
+  <time_step>
+    <ts time="1.0000000000" > 01</ts>
+  </time_step>
+  <global dim="2"/>
+  <node>
+    <n x="0.0000000000" y="0.0000000000"> 01</n>
+    <n x="25.000000000" y="0.0000000000"> 02</n>
+    <n x="50.000000000" y="0.0000000000"> 03</n>
+    <n x="75.000000000" y="0.0000000000"> 04</n>
+    <n x="100.00000000" y="0.0000000000"> 05</n>
+    <n x="0.0000000000" y="33.333333333"> 06</n>
+    <n x="25.000000000" y="33.333333333"> 07</n>
+    <n x="50.000000000" y="33.333333333"> 08</n>
+    <n x="75.000000000" y="33.333333333"> 09</n>
+    <n x="100.00000000" y="33.333333333"> 10</n>
+    <n x="0.0000000000" y="66.666666666"> 11</n>
+    <n x="25.000000000" y="66.666666666"> 12</n>
+    <n x="50.000000000" y="66.666666666"> 13</n>
+    <n x="75.000000000" y="66.666666666"> 14</n>
+    <n x="100.00000000" y="66.666666666"> 15</n>
+    <n x="0.0000000000" y="100.00000000"> 16</n>
+    <n x="25.000000000" y="100.00000000"> 17</n>
+    <n x="50.000000000" y="100.00000000"> 18</n>
+    <n x="75.000000000" y="100.00000000"> 19</n>
+    <n x="100.00000000" y="100.00000000"> 20</n>
+  </node>
+  <element>
+    <e gnn="01 02 03   06 07 08   11 12 13   16 17 18" et="1" m="1" > 01</e>
+    <e gnn="03 04 05   08 09 10   13 14 15   18 19 20" et="2" m="1" > 02</e>
+  </element>
+  <element_type>
+    <et>
+      1
+      <type      class= "ElementPlateQuad" />
+      <shape     class= "LagrangeQuadrilateral" />
+      <el_order  value= "2, 3"/>
+      <int_order value= "2, 3"/> 
+      <data      id=    "thickness" value="10" />
+    </et>    
+    <et>
+      2
+      <type      class= "ElementPlateQuad" />
+      <shape     class= "LagrangeQuadrilateral" />
+      <el_order  value= "2, 3"/>
+      <int_order value= "4, 4"/> 
+      <data      id=    "thickness" value="10" />
+    </et>
+  </element_type>
+  <material>
+    <m>
+      1
+      <data id="E"  value="2000"/>
+      <data id="nu" value="0" />
+    </m>
+  </material>
+  <boundary_condition>
+    <bc gnn="01" dir="x" typ="d" val="   0"> 01</bc>
+    <bc gnn="01" dir="y" typ="d" val="   0"> 02</bc>
+    <bc gnn="06" dir="x" typ="d" val="   0"> 03</bc>
+    <bc gnn="06" dir="y" typ="d" val="   0"> 04</bc>
+    <bc gnn="11" dir="x" typ="d" val="   0"> 05</bc>
+    <bc gnn="11" dir="y" typ="d" val="   0"> 06</bc>
+    <bc gnn="16" dir="x" typ="d" val="   0"> 07</bc>
+    <bc gnn="16" dir="y" typ="d" val="   0"> 08</bc>
+    <bc gnn="20" dir="y" typ="n" val="-100"> 09</bc>
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+

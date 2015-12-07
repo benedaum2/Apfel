@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisPlasticity"/> -->
+  <!-- <analysis_type class="AnalysisLinear"/> -->
+  <flow_rule class="VonMises" sigma_f="1" />
+  <time_step>
+    <ts time="0.0200" >001</ts>
+    <ts time="0.0400" >002</ts>
+    <ts time="0.0600" >003</ts>
+    <ts time="0.0800" >004</ts>
+    <ts time="0.1000" >005</ts>
+    <ts time="0.1200" >006</ts>
+    <ts time="0.1400" >007</ts>
+    <ts time="0.1600" >008</ts>
+    <ts time="0.1800" >009</ts>
+    <ts time="0.2000" >010</ts>
+    <ts time="0.2200" >011</ts>
+    <ts time="0.2400" >012</ts>
+    <ts time="0.2600" >013</ts>
+    <ts time="0.2800" >014</ts>
+    <ts time="0.3000" >015</ts>
+    <ts time="0.3200" >016</ts>
+    <ts time="0.3400" >017</ts>
+    <ts time="0.3600" >018</ts>
+    <ts time="0.3800" >019</ts>
+    <ts time="0.4000" >020</ts>
+    <ts time="0.4200" >021</ts>
+    <ts time="0.4400" >022</ts>
+    <ts time="0.4600" >023</ts>
+    <ts time="0.4800" >024</ts>
+    <ts time="0.5000" >025</ts>
+    <ts time="0.5200" >026</ts>
+    <ts time="0.5400" >027</ts>
+    <ts time="0.5600" >028</ts>
+    <ts time="0.5800" >029</ts>
+    <ts time="0.6000" >030</ts>
+    <ts time="0.6200" >031</ts>
+    <ts time="0.6400" >032</ts>
+    <ts time="0.6600" >033</ts>
+    <ts time="0.6800" >034</ts>
+    <ts time="0.7000" >035</ts>
+    <ts time="0.7200" >036</ts>
+    <ts time="0.7400" >037</ts>
+    <ts time="0.7600" >038</ts>
+    <ts time="0.7800" >039</ts>
+    <ts time="0.8000" >040</ts>
+    <ts time="0.8200" >041</ts>
+    <ts time="0.8400" >042</ts>
+    <ts time="0.8600" >043</ts>
+    <ts time="0.8800" >044</ts>
+    <ts time="0.9000" >045</ts>
+    <ts time="0.9200" >046</ts>
+    <ts time="0.9400" >047</ts>
+    <ts time="0.9600" >048</ts>
+    <ts time="0.9800" >049</ts>
+    <ts time="1.0000" >050</ts>
+  </time_step>
+  <global dim="2"/>
+  <node>
+    <n x="-30.00000000" y="  0.00000000">01</n>
+    <n x="130.00000000" y="  0.00000000">02</n>
+    
+    <n x="-10.00000000" y="100.00000000">03</n>
+    <n x="110.00000000" y="100.00000000">04</n>
+    
+    <n x=" 10.00000000" y="200.00000000">05</n>
+    <n x=" 90.00000000" y="200.00000000">06</n>
+
+    <n x=" 30.00000000" y="300.00000000">07</n>
+    <n x=" 70.00000000" y="300.00000000">08</n>  
+  </node>
+  <element>
+    <e gnn="01 02 03 04" et="1" m="1" >01</e>
+    <e gnn="03 04 05 06" et="1" m="1" >02</e>
+    <e gnn="05 06 07 08" et="1" m="1" >03</e>    
+  </element>
+  <element_type>
+    <et>
+      1
+      <type  class="plasticity.element.Quadrilateral" /> -->
+      <!-- <type  class="model.element.Quadrilateral" /> -->
+      <shape class="LagrangeQuadrilateral" />
+      <el_order  value="1, 1" />      
+      <int_order value="2, 1" />
+      <data field="plain_strain" func="str2double" value="1" />
+    </et>
+
+  </element_type>
+  <material>
+    <m>
+      1
+      <data field="E"  func="str2double" value="1000" />
+      <data field="nu" func="str2double" value="0.3" />   
+    </m>
+  </material>
+  <boundary_condition>
+    <bc gnn="01" dir="x" typ="d" val="    0"> 01</bc>
+    <bc gnn="01" dir="y" typ="d" val="    0"> 02</bc>
+    <bc gnn="02" dir="y" typ="d" val="    0"> 04</bc>
+    
+    <bc gnn="07" dir="y" typ="d" val="-5.00"> 09</bc>
+    <bc gnn="08" dir="y" typ="d" val="-5.00"> 10</bc>
+    -->    
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisLinear"/>
+  <global dim="3"/>
+  <node>
+    <n x="  0.00000000" y="  0.00000000" z="  0.00000000"> 01</n>
+    <n x=" 50.00000000" y="  0.00000000" z="  0.00000000"> 02</n>
+    <n x="100.00000000" y="  0.00000000" z="  0.00000000"> 03</n>
+    <n x="  0.00000000" y=" 50.00000000" z="  0.00000000"> 04</n>
+    <n x=" 50.00000000" y=" 50.00000000" z="  0.00000000"> 05</n>
+    <n x="100.00000000" y=" 50.00000000" z="  0.00000000"> 06</n>
+    <n x="  0.00000000" y="100.00000000" z="  0.00000000"> 07</n>
+    <n x=" 50.00000000" y="100.00000000" z="  0.00000000"> 08</n>
+    <n x="100.00000000" y="100.00000000" z="  0.00000000"> 09</n>
+    <n x="  0.00000000" y="  0.00000000" z=" 10.00000000"> 10</n>
+    <n x=" 50.00000000" y="  0.00000000" z=" 10.00000000"> 11</n>
+    <n x="100.00000000" y="  0.00000000" z=" 10.00000000"> 12</n>
+    <n x="  0.00000000" y=" 50.00000000" z=" 10.00000000"> 13</n>
+    <n x=" 50.00000000" y=" 50.00000000" z=" 10.00000000"> 14</n>
+    <n x="100.00000000" y=" 50.00000000" z=" 10.00000000"> 15</n>
+    <n x="  0.00000000" y="100.00000000" z=" 10.00000000"> 16</n>
+    <n x=" 50.00000000" y="100.00000000" z=" 10.00000000"> 17</n>
+    <n x="100.00000000" y="100.00000000" z=" 10.00000000"> 18</n>    
+  </node>
+  <element>
+    <e gnn="01 02  04 05  07 08   10 11  13 14  16 17" et="1" m="1" > 01</e>
+    <e gnn="02 03  05 06  08 09   11 12  14 15  17 18" et="1" m="1" > 02</e>
+  </element>
+  <element_type>
+    <et>
+      1
+      <type  class= "model.element.Hexahedron" />
+      <shape class= "LagrangeHexahedron" />
+      <el_order  value= "1, 2, 1"/>
+      <int_order value= "2, 2, 2"/> 
+    </et>    
+  </element_type>
+  <material>
+    <m>
+      1
+      <data field="E"  func="str2double" value="2000" />
+      <data field="nu" func="str2double" value="0.3" />
+    </m>
+  </material>
+  <boundary_condition>
+    <bc gnn="01" dir="x" typ="d" val="   0"> 01</bc>
+    <bc gnn="01" dir="y" typ="d" val="   0"> 02</bc>
+    <bc gnn="04" dir="x" typ="d" val="   0"> 03</bc>
+    <bc gnn="04" dir="y" typ="d" val="   0"> 04</bc>
+    <bc gnn="07" dir="x" typ="d" val="   0"> 05</bc>
+    <bc gnn="07" dir="y" typ="d" val="   0"> 06</bc>
+    <bc gnn="09" dir="y" typ="n" val=" -50"> 07</bc>
+    <bc gnn="10" dir="x" typ="d" val="   0"> 08</bc>
+    <bc gnn="10" dir="y" typ="d" val="   0"> 09</bc>
+    <bc gnn="13" dir="x" typ="d" val="   0"> 10</bc>
+    <bc gnn="13" dir="y" typ="d" val="   0"> 11</bc>
+    <bc gnn="16" dir="x" typ="d" val="   0"> 12</bc>
+    <bc gnn="16" dir="y" typ="d" val="   0"> 13</bc>
+    <bc gnn="18" dir="y" typ="n" val=" -50"> 14</bc>
+    <bc gnn="01" dir="z" typ="d" val="   0"> 15</bc>
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,3895 @@
+%!PS-Adobe-3.0 
+%%Creator: MATLAB, The Mathworks, Inc. Version 7.6.0.324 (R2008a). Operating System: Linux 2.6.31-22-generic #60-Ubuntu SMP Thu May 27 02:41:03 UTC 2010 x86_64.
+%%Title: figures/kirsch-2010-06-17.ps
+%%CreationDate: 06/17/2010  18:01:33
+%%DocumentNeededFonts: Helvetica
+%%DocumentProcessColors: Cyan Magenta Yellow Black
+%%LanguageLevel: 2
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+
+%%BeginProlog
+% MathWorks dictionary
+/MathWorks 160 dict begin
+% definition operators
+/bdef {bind def} bind def
+/ldef {load def} bind def
+/xdef {exch def} bdef
+/xstore {exch store} bdef
+% operator abbreviations
+/c  /clip ldef
+/cc /concat ldef
+/cp /closepath ldef
+/gr /grestore ldef
+/gs /gsave ldef
+/mt /moveto ldef
+/np /newpath ldef
+/cm /currentmatrix ldef
+/sm /setmatrix ldef
+/rm /rmoveto ldef
+/rl /rlineto ldef
+/s {show newpath} bdef
+/sc {setcmykcolor} bdef
+/sr /setrgbcolor ldef
+/sg /setgray ldef
+/w /setlinewidth ldef
+/j /setlinejoin ldef
+/cap /setlinecap ldef
+/rc {rectclip} bdef
+/rf {rectfill} bdef
+% page state control
+/pgsv () def
+/bpage {/pgsv save def} bdef
+/epage {pgsv restore} bdef
+/bplot /gsave ldef
+/eplot {stroke grestore} bdef
+% orientation switch
+/portraitMode 0 def /landscapeMode 1 def /rotateMode 2 def
+% coordinate system mappings
+/dpi2point 0 def
+% font control
+/FontSize 0 def
+/FMS {/FontSize xstore findfont [FontSize 0 0 FontSize neg 0 0]
+  makefont setfont} bdef
+/reencode {exch dup where {pop load} {pop StandardEncoding} ifelse
+  exch dup 3 1 roll findfont dup length dict begin
+  { 1 index /FID ne {def}{pop pop} ifelse } forall
+  /Encoding exch def currentdict end definefont pop} bdef
+/isroman {findfont /CharStrings get /Agrave known} bdef
+/FMSR {3 1 roll 1 index dup isroman {reencode} {pop pop} ifelse
+  exch FMS} bdef
+/csm {1 dpi2point div -1 dpi2point div scale neg translate
+ dup landscapeMode eq {pop -90 rotate}
+  {rotateMode eq {90 rotate} if} ifelse} bdef
+% line types: solid, dotted, dashed, dotdash
+/SO { [] 0 setdash } bdef
+/DO { [.5 dpi2point mul 4 dpi2point mul] 0 setdash } bdef
+/DA { [6 dpi2point mul] 0 setdash } bdef
+/DD { [.5 dpi2point mul 4 dpi2point mul 6 dpi2point mul 4
+  dpi2point mul] 0 setdash } bdef
+% macros for lines and objects
+/L {lineto stroke} bdef
+/MP {3 1 roll moveto 1 sub {rlineto} repeat} bdef
+/AP {{rlineto} repeat} bdef
+/PDlw -1 def
+/W {/PDlw currentlinewidth def setlinewidth} def
+/PP {closepath eofill} bdef
+/DP {closepath stroke} bdef
+/MR {4 -2 roll moveto dup  0 exch rlineto exch 0 rlineto
+  neg 0 exch rlineto closepath} bdef
+/FR {MR stroke} bdef
+/PR {MR fill} bdef
+/L1i {{currentfile picstr readhexstring pop} image} bdef
+/tMatrix matrix def
+/MakeOval {newpath tMatrix currentmatrix pop translate scale
+0 0 1 0 360 arc tMatrix setmatrix} bdef
+/FO {MakeOval stroke} bdef
+/PO {MakeOval fill} bdef
+/PD {currentlinewidth 2 div 0 360 arc fill
+   PDlw -1 eq not {PDlw w /PDlw -1 def} if} def
+/FA {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arc tMatrix setmatrix stroke} bdef
+/PA {newpath tMatrix currentmatrix pop	translate 0 0 moveto scale
+  0 0 1 5 -2 roll arc closepath tMatrix setmatrix fill} bdef
+/FAn {newpath tMatrix currentmatrix pop translate scale
+  0 0 1 5 -2 roll arcn tMatrix setmatrix stroke} bdef
+/PAn {newpath tMatrix currentmatrix pop translate 0 0 moveto scale
+  0 0 1 5 -2 roll arcn closepath tMatrix setmatrix fill} bdef
+/vradius 0 def /hradius 0 def /lry 0 def
+/lrx 0 def /uly 0 def /ulx 0 def /rad 0 def
+/MRR {/vradius xdef /hradius xdef /lry xdef /lrx xdef /uly xdef
+  /ulx xdef newpath tMatrix currentmatrix pop ulx hradius add uly
+  vradius add translate hradius vradius scale 0 0 1 180 270 arc 
+  tMatrix setmatrix lrx hradius sub uly vradius add translate
+  hradius vradius scale 0 0 1 270 360 arc tMatrix setmatrix
+  lrx hradius sub lry vradius sub translate hradius vradius scale
+  0 0 1 0 90 arc tMatrix setmatrix ulx hradius add lry vradius sub
+  translate hradius vradius scale 0 0 1 90 180 arc tMatrix setmatrix
+  closepath} bdef
+/FRR {MRR stroke } bdef
+/PRR {MRR fill } bdef
+/MlrRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lry uly sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 90 270 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 270 90 arc tMatrix setmatrix
+  closepath} bdef
+/FlrRR {MlrRR stroke } bdef
+/PlrRR {MlrRR fill } bdef
+/MtbRR {/lry xdef /lrx xdef /uly xdef /ulx xdef /rad lrx ulx sub 2 div def
+  newpath tMatrix currentmatrix pop ulx rad add uly rad add translate
+  rad rad scale 0 0 1 180 360 arc tMatrix setmatrix lrx rad sub lry rad
+  sub translate rad rad scale 0 0 1 0 180 arc tMatrix setmatrix
+  closepath} bdef
+/FtbRR {MtbRR stroke } bdef
+/PtbRR {MtbRR fill } bdef
+/stri 6 array def /dtri 6 array def
+/smat 6 array def /dmat 6 array def
+/tmat1 6 array def /tmat2 6 array def /dif 3 array def
+/asub {/ind2 exch def /ind1 exch def dup dup
+  ind1 get exch ind2 get sub exch } bdef
+/tri_to_matrix {
+  2 0 asub 3 1 asub 4 0 asub 5 1 asub
+  dup 0 get exch 1 get 7 -1 roll astore } bdef
+/compute_transform {
+  dmat dtri tri_to_matrix tmat1 invertmatrix 
+  smat stri tri_to_matrix tmat2 concatmatrix } bdef
+/ds {stri astore pop} bdef
+/dt {dtri astore pop} bdef
+/db {2 copy /cols xdef /rows xdef mul dup 3 mul string
+  currentfile 
+  3 index 0 eq {/ASCIIHexDecode filter}
+  {/ASCII85Decode filter 3 index 2 eq {/RunLengthDecode filter} if }
+  ifelse exch readstring pop
+  dup 0 3 index getinterval /rbmap xdef
+  dup 2 index dup getinterval /gbmap xdef
+  1 index dup 2 mul exch getinterval /bbmap xdef pop pop}bdef
+/it {gs np dtri aload pop moveto lineto lineto cp c
+  cols rows 8 compute_transform 
+  rbmap gbmap bbmap true 3 colorimage gr}bdef
+/il {newpath moveto lineto stroke}bdef
+currentdict end def
+%%EndProlog
+
+%%BeginSetup
+MathWorks begin
+
+0 cap
+
+end
+%%EndSetup
+
+%%Page: 1 1
+%%BeginPageSetup
+%%PageBoundingBox:    80   179   523   608
+MathWorks begin
+bpage
+%%EndPageSetup
+
+%%BeginObject: obj1
+bplot
+
+/dpi2point 12 def
+portraitMode 0216 7344 csm
+
+  750    41  5317  5144 rc
+85 dict begin %Colortable dictionary
+/c0 { 0.000000 0.000000 0.000000 sr} bdef
+/c1 { 1.000000 1.000000 1.000000 sr} bdef
+/c2 { 0.900000 0.000000 0.000000 sr} bdef
+/c3 { 0.000000 0.820000 0.000000 sr} bdef
+/c4 { 0.000000 0.000000 0.800000 sr} bdef
+/c5 { 0.910000 0.820000 0.320000 sr} bdef
+/c6 { 1.000000 0.260000 0.820000 sr} bdef
+/c7 { 0.000000 0.820000 0.820000 sr} bdef
+c0
+1 j
+1 sg
+   0    0 6913 5186 rf
+6 w
+0 4925 4941 0 0 -4925 985 5055 4 MP
+PP
+-4941 0 0 4925 4941 0 0 -4925 985 5055 5 MP stroke
+4 w
+DO
+SO
+6 w
+0 sg
+ 985 5055 mt 5926 5055 L
+ 985 5055 mt  985  130 L
+1049 5055 mt 1049 5005 L
+%%IncludeResource: font Helvetica
+/Helvetica /ISOLatin1Encoding 120 FMSR
+
+1016 5200 mt 
+(0) s
+2661 5055 mt 2661 5005 L
+2595 5200 mt 
+(50) s
+4273 5055 mt 4273 5005 L
+4173 5200 mt 
+(100) s
+5886 5055 mt 5886 5005 L
+5786 5200 mt 
+(150) s
+ 985 4999 mt 1034 4999 L
+ 884 5043 mt 
+(0) s
+ 985 3386 mt 1034 3386 L
+ 817 3430 mt 
+(50) s
+ 985 1774 mt 1034 1774 L
+ 750 1818 mt 
+(100) s
+ 985  162 mt 1034  162 L
+ 750  206 mt 
+(150) s
+gs 985 130 4942 4926 rc
+/c8 { 1.000000 0.000000 0.000000 sr} bdef
+c8
+-325 51 -18 -304 323 0 20 253 2641 4746 5 MP stroke
+0 j
+gr
+
+c8
+gs 2568 4622 490 451 rc
+  36   36 2641 4746 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2568 4622 490 451 rc
+  36   36 2661 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2568 4622 490 451 rc
+  36   36 2984 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2568 4622 490 451 rc
+  36   36 2966 4695 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 2740 4787 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 2813 4907 5 MP
+DP
+gr
+
+gr
+
+2813 4764 mt 
+( -0.0) s
+2813 4902 mt 
+( -0.7) s
+2813 5040 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-331 107 -53 -302 325 -51 59 246 2582 4500 5 MP stroke
+0 j
+gs 2509 4320 531 500 rc
+  36   36 2582 4500 FO
+gr
+
+gs 2509 4320 531 500 rc
+  36   36 2641 4746 FO
+gr
+
+gs 2509 4320 531 500 rc
+  36   36 2966 4695 FO
+gr
+
+gs 2509 4320 531 500 rc
+  36   36 2913 4393 FO
+gr
+
+gs 2702 4511 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2775 4631 5 MP
+DP
+gr
+
+gr
+
+2775 4488 mt 
+(  0.0) s
+2775 4626 mt 
+( -0.6) s
+2775 4764 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-340 174 -88 -300 331 -107 97 233 2485 4267 5 MP stroke
+0 j
+gs 2412 4020 575 554 rc
+  36   36 2485 4267 FO
+gr
+
+gs 2412 4020 575 554 rc
+  36   36 2582 4500 FO
+gr
+
+gs 2412 4020 575 554 rc
+  36   36 2913 4393 FO
+gr
+
+gs 2412 4020 575 554 rc
+  36   36 2825 4093 FO
+gr
+
+gs 2628 4240 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2701 4360 5 MP
+DP
+gr
+
+gr
+
+2701 4217 mt 
+(  0.1) s
+2701 4355 mt 
+( -0.4) s
+2701 4493 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-353 257 -119 -299 340 -174 132 216 2353 4051 5 MP stroke
+0 j
+gs 2280 3721 619 620 rc
+  36   36 2353 4051 FO
+gr
+
+gs 2280 3721 619 620 rc
+  36   36 2485 4267 FO
+gr
+
+gs 2280 3721 619 620 rc
+  36   36 2825 4093 FO
+gr
+
+gs 2280 3721 619 620 rc
+  36   36 2706 3794 FO
+gr
+
+gs 2520 3978 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2593 4098 5 MP
+DP
+gr
+
+gr
+
+2593 3955 mt 
+(  0.4) s
+2593 4093 mt 
+( -0.1) s
+2593 4231 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-370 370 -147 -305 353 -257 164 192 2189 3859 5 MP stroke
+0 j
+gs 2116 3416 664 709 rc
+  36   36 2189 3859 FO
+gr
+
+gs 2116 3416 664 709 rc
+  36   36 2353 4051 FO
+gr
+
+gs 2116 3416 664 709 rc
+  36   36 2706 3794 FO
+gr
+
+gs 2116 3416 664 709 rc
+  36   36 2559 3489 FO
+gr
+
+gs 2379 3725 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2452 3845 5 MP
+DP
+gr
+
+gr
+
+2452 3702 mt 
+(  0.8) s
+2452 3840 mt 
+(  0.1) s
+2452 3978 mt 
+( -0.3) s
+gs 985 130 4942 4926 rc
+-256 353 -306 -148 370 -370 192 165 1997 3694 5 MP stroke
+0 j
+gs 1924 3268 709 665 rc
+  36   36 1997 3694 FO
+gr
+
+gs 1924 3268 709 665 rc
+  36   36 2189 3859 FO
+gr
+
+gs 1924 3268 709 665 rc
+  36   36 2559 3489 FO
+gr
+
+gs 1924 3268 709 665 rc
+  36   36 2253 3341 FO
+gr
+
+gs 2176 3523 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2249 3643 5 MP
+DP
+gr
+
+gr
+
+2249 3500 mt 
+(  1.2) s
+2249 3638 mt 
+(  0.2) s
+2249 3776 mt 
+( -0.5) s
+gs 985 130 4942 4926 rc
+-173 340 -299 -119 256 -353 216 132 1781 3562 5 MP stroke
+0 j
+gs 1708 3149 619 619 rc
+  36   36 1781 3562 FO
+gr
+
+gs 1708 3149 619 619 rc
+  36   36 1997 3694 FO
+gr
+
+gs 1708 3149 619 619 rc
+  36   36 2253 3341 FO
+gr
+
+gs 1708 3149 619 619 rc
+  36   36 1954 3222 FO
+gr
+
+gs 1923 3382 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1996 3502 5 MP
+DP
+gr
+
+gr
+
+1996 3359 mt 
+(  1.8) s
+1996 3497 mt 
+(  0.3) s
+1996 3635 mt 
+( -0.6) s
+gs 985 130 4942 4926 rc
+-107 330 -300 -87 173 -340 234 97 1547 3465 5 MP stroke
+0 j
+gs 1474 3062 554 574 rc
+  36   36 1547 3465 FO
+gr
+
+gs 1474 3062 554 574 rc
+  36   36 1781 3562 FO
+gr
+
+gs 1474 3062 554 574 rc
+  36   36 1954 3222 FO
+gr
+
+gs 1474 3062 554 574 rc
+  36   36 1654 3135 FO
+gr
+
+gs 1661 3273 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1734 3393 5 MP
+DP
+gr
+
+gr
+
+1734 3250 mt 
+(  2.3) s
+1734 3388 mt 
+(  0.3) s
+1734 3526 mt 
+( -0.6) s
+gs 985 130 4942 4926 rc
+-51 324 -302 -53 107 -330 246 59 1301 3406 5 MP stroke
+0 j
+gs 1228 3009 500 530 rc
+  36   36 1301 3406 FO
+gr
+
+gs 1228 3009 500 530 rc
+  36   36 1547 3465 FO
+gr
+
+gs 1228 3009 500 530 rc
+  36   36 1654 3135 FO
+gr
+
+gs 1228 3009 500 530 rc
+  36   36 1352 3082 FO
+gr
+
+gs 1391 3199 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1464 3319 5 MP
+DP
+gr
+
+gr
+
+1464 3176 mt 
+(  2.8) s
+1464 3314 mt 
+(  0.3) s
+1464 3452 mt 
+( -0.4) s
+gs 985 130 4942 4926 rc
+0 322 -303 -18 51 -324 252 20 1049 3386 5 MP stroke
+0 j
+gr
+
+gs 976 2991 450 489 rc
+  36   36 1049 3386 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2991 450 489 rc
+  36   36 1301 3406 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2991 450 489 rc
+  36   36 1352 3082 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2991 450 489 rc
+  36   36 1049 3064 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1115 3162 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1188 3282 5 MP
+DP
+gr
+
+gr
+
+1188 3139 mt 
+(  3.1) s
+1188 3277 mt 
+(  0.2) s
+1188 3415 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-324 51 -16 -355 322 0 18 304 2966 4695 5 MP stroke
+0 j
+gr
+
+gs 2893 4571 487 502 rc
+  36   36 2966 4695 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2893 4571 487 502 rc
+  36   36 2984 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2893 4571 487 502 rc
+  36   36 3306 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2893 4571 487 502 rc
+  36   36 3290 4644 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 3063 4761 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 3136 4881 5 MP
+DP
+gr
+
+gr
+
+3136 4738 mt 
+(  0.0) s
+3136 4876 mt 
+( -0.3) s
+3136 5014 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-330 107 -47 -358 324 -51 53 302 2913 4393 5 MP stroke
+0 j
+gs 2840 4213 524 556 rc
+  36   36 2913 4393 FO
+gr
+
+gs 2840 4213 524 556 rc
+  36   36 2966 4695 FO
+gr
+
+gs 2840 4213 524 556 rc
+  36   36 3290 4644 FO
+gr
+
+gs 2840 4213 524 556 rc
+  36   36 3243 4286 FO
+gr
+
+gs 3030 4431 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3103 4551 5 MP
+DP
+gr
+
+gr
+
+3103 4408 mt 
+(  0.2) s
+3103 4546 mt 
+( -0.2) s
+3103 4684 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-340 173 -78 -366 330 -107 88 300 2825 4093 5 MP stroke
+0 j
+gs 2752 3847 565 620 rc
+  36   36 2825 4093 FO
+gr
+
+gs 2752 3847 565 620 rc
+  36   36 2913 4393 FO
+gr
+
+gs 2752 3847 565 620 rc
+  36   36 3243 4286 FO
+gr
+
+gs 2752 3847 565 620 rc
+  36   36 3165 3920 FO
+gr
+
+gs 2964 4100 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3037 4220 5 MP
+DP
+gr
+
+gr
+
+3037 4077 mt 
+(  0.4) s
+3037 4215 mt 
+( -0.2) s
+3037 4353 mt 
+( -0.3) s
+gs 985 130 4942 4926 rc
+-354 256 -105 -382 340 -173 119 299 2706 3794 5 MP stroke
+0 j
+gs 2633 3465 606 702 rc
+  36   36 2706 3794 FO
+gr
+
+gs 2633 3465 606 702 rc
+  36   36 2825 4093 FO
+gr
+
+gs 2633 3465 606 702 rc
+  36   36 3165 3920 FO
+gr
+
+gs 2633 3465 606 702 rc
+  36   36 3060 3538 FO
+gr
+
+gs 2866 3763 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2939 3883 5 MP
+DP
+gr
+
+gr
+
+2939 3740 mt 
+(  0.8) s
+2939 3878 mt 
+( -0.2) s
+2939 4016 mt 
+( -0.4) s
+gs 985 130 4942 4926 rc
+-369 370 -132 -419 354 -256 147 305 2559 3489 5 MP stroke
+0 j
+gs 2486 3046 648 822 rc
+  36   36 2559 3489 FO
+gr
+
+gs 2486 3046 648 822 rc
+  36   36 2706 3794 FO
+gr
+
+gs 2486 3046 648 822 rc
+  36   36 3060 3538 FO
+gr
+
+gs 2486 3046 648 822 rc
+  36   36 2928 3119 FO
+gr
+
+gs 2740 3412 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2813 3532 5 MP
+DP
+gr
+
+gr
+
+2813 3389 mt 
+(  1.2) s
+2813 3527 mt 
+( -0.2) s
+2813 3665 mt 
+( -0.3) s
+gs 985 130 4942 4926 rc
+-257 353 -418 -131 369 -370 306 148 2253 3341 5 MP stroke
+0 j
+gs 2180 2915 822 648 rc
+  36   36 2253 3341 FO
+gr
+
+gs 2180 2915 822 648 rc
+  36   36 2559 3489 FO
+gr
+
+gs 2180 2915 822 648 rc
+  36   36 2928 3119 FO
+gr
+
+gs 2180 2915 822 648 rc
+  36   36 2510 2988 FO
+gr
+
+gs 2489 3161 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2562 3281 5 MP
+DP
+gr
+
+gr
+
+2562 3138 mt 
+(  1.5) s
+2562 3276 mt 
+( -0.1) s
+2562 3414 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-173 340 -383 -106 257 -353 299 119 1954 3222 5 MP stroke
+0 j
+gs 1881 2809 703 606 rc
+  36   36 1954 3222 FO
+gr
+
+gs 1881 2809 703 606 rc
+  36   36 2253 3341 FO
+gr
+
+gs 1881 2809 703 606 rc
+  36   36 2510 2988 FO
+gr
+
+gs 1881 2809 703 606 rc
+  36   36 2127 2882 FO
+gr
+
+gs 2138 3035 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2211 3155 5 MP
+DP
+gr
+
+gr
+
+2211 3012 mt 
+(  1.7) s
+2211 3150 mt 
+(  0.0) s
+2211 3288 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-108 330 -365 -77 173 -340 300 87 1654 3135 5 MP stroke
+0 j
+gs 1581 2732 620 564 rc
+  36   36 1654 3135 FO
+gr
+
+gs 1581 2732 620 564 rc
+  36   36 1954 3222 FO
+gr
+
+gs 1581 2732 620 564 rc
+  36   36 2127 2882 FO
+gr
+
+gs 1581 2732 620 564 rc
+  36   36 1762 2805 FO
+gr
+
+gs 1801 2938 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1874 3058 5 MP
+DP
+gr
+
+gr
+
+1874 2915 mt 
+(  2.0) s
+1874 3053 mt 
+(  0.2) s
+1874 3191 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-52 325 -358 -48 108 -330 302 53 1352 3082 5 MP stroke
+0 j
+gs 1279 2684 557 525 rc
+  36   36 1352 3082 FO
+gr
+
+gs 1279 2684 557 525 rc
+  36   36 1654 3135 FO
+gr
+
+gs 1279 2684 557 525 rc
+  36   36 1762 2805 FO
+gr
+
+gs 1279 2684 557 525 rc
+  36   36 1404 2757 FO
+gr
+
+gs 1470 2872 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1543 2992 5 MP
+DP
+gr
+
+gr
+
+1543 2849 mt 
+(  2.2) s
+1543 2987 mt 
+(  0.3) s
+1543 3125 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+0 323 -355 -16 52 -325 303 18 1049 3064 5 MP stroke
+0 j
+gr
+
+gs 976 2668 502 488 rc
+  36   36 1049 3064 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2668 502 488 rc
+  36   36 1352 3082 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2668 502 488 rc
+  36   36 1404 2757 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2668 502 488 rc
+  36   36 1049 2741 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1141 2838 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1214 2958 5 MP
+DP
+gr
+
+gr
+
+1214 2815 mt 
+(  2.3) s
+1214 2953 mt 
+(  0.4) s
+1214 3091 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-325 52 -14 -407 323 0 16 355 3290 4644 5 MP stroke
+0 j
+gr
+
+gs 3217 4519 486 554 rc
+  36   36 3290 4644 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3217 4519 486 554 rc
+  36   36 3306 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3217 4519 486 554 rc
+  36   36 3629 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3217 4519 486 554 rc
+  36   36 3615 4592 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 3387 4735 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 3460 4855 5 MP
+DP
+gr
+
+gr
+
+3460 4712 mt 
+(  0.2) s
+3460 4850 mt 
+( -0.0) s
+3460 4988 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-330 108 -42 -414 325 -52 47 358 3243 4286 5 MP stroke
+0 j
+gs 3170 4105 519 613 rc
+  36   36 3243 4286 FO
+gr
+
+gs 3170 4105 519 613 rc
+  36   36 3290 4644 FO
+gr
+
+gs 3170 4105 519 613 rc
+  36   36 3615 4592 FO
+gr
+
+gs 3170 4105 519 613 rc
+  36   36 3573 4178 FO
+gr
+
+gs 3357 4352 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3430 4472 5 MP
+DP
+gr
+
+gr
+
+3430 4329 mt 
+(  0.3) s
+3430 4467 mt 
+( -0.1) s
+3430 4605 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-341 173 -67 -431 330 -108 78 366 3165 3920 5 MP stroke
+0 j
+gs 3092 3674 555 686 rc
+  36   36 3165 3920 FO
+gr
+
+gs 3092 3674 555 686 rc
+  36   36 3243 4286 FO
+gr
+
+gs 3092 3674 555 686 rc
+  36   36 3573 4178 FO
+gr
+
+gs 3092 3674 555 686 rc
+  36   36 3506 3747 FO
+gr
+
+gs 3299 3960 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3372 4080 5 MP
+DP
+gr
+
+gr
+
+3372 3937 mt 
+(  0.6) s
+3372 4075 mt 
+( -0.1) s
+3372 4213 mt 
+( -0.3) s
+gs 985 130 4942 4926 rc
+-353 257 -93 -466 341 -173 105 382 3060 3538 5 MP stroke
+0 j
+gs 2987 3208 593 786 rc
+  36   36 3060 3538 FO
+gr
+
+gs 2987 3208 593 786 rc
+  36   36 3165 3920 FO
+gr
+
+gs 2987 3208 593 786 rc
+  36   36 3506 3747 FO
+gr
+
+gs 2987 3208 593 786 rc
+  36   36 3413 3281 FO
+gr
+
+gs 3213 3548 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3286 3668 5 MP
+DP
+gr
+
+gr
+
+3286 3525 mt 
+(  1.0) s
+3286 3663 mt 
+( -0.2) s
+3286 3801 mt 
+( -0.3) s
+gs 985 130 4942 4926 rc
+-370 369 -115 -531 353 -257 132 419 2928 3119 5 MP stroke
+0 j
+gs 2855 2677 632 935 rc
+  36   36 2928 3119 FO
+gr
+
+gs 2855 2677 632 935 rc
+  36   36 3060 3538 FO
+gr
+
+gs 2855 2677 632 935 rc
+  36   36 3413 3281 FO
+gr
+
+gs 2855 2677 632 935 rc
+  36   36 3298 2750 FO
+gr
+
+gs 3102 3099 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3175 3219 5 MP
+DP
+gr
+
+gr
+
+3175 3076 mt 
+(  1.3) s
+3175 3214 mt 
+( -0.2) s
+3175 3352 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-256 353 -532 -115 370 -369 418 131 2510 2988 5 MP stroke
+0 j
+gs 2437 2562 935 631 rc
+  36   36 2510 2988 FO
+gr
+
+gs 2437 2562 935 631 rc
+  36   36 2928 3119 FO
+gr
+
+gs 2437 2562 935 631 rc
+  36   36 3298 2750 FO
+gr
+
+gs 2437 2562 935 631 rc
+  36   36 2766 2635 FO
+gr
+
+gs 2803 2800 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2876 2920 5 MP
+DP
+gr
+
+gr
+
+2876 2777 mt 
+(  1.5) s
+2876 2915 mt 
+( -0.2) s
+2876 3053 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-174 340 -465 -93 256 -353 383 106 2127 2882 5 MP stroke
+0 j
+gs 2054 2469 786 593 rc
+  36   36 2127 2882 FO
+gr
+
+gs 2054 2469 786 593 rc
+  36   36 2510 2988 FO
+gr
+
+gs 2054 2469 786 593 rc
+  36   36 2766 2635 FO
+gr
+
+gs 2054 2469 786 593 rc
+  36   36 2301 2542 FO
+gr
+
+gs 2353 2689 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2426 2809 5 MP
+DP
+gr
+
+gr
+
+2426 2666 mt 
+(  1.7) s
+2426 2804 mt 
+( -0.1) s
+2426 2942 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-107 331 -432 -68 174 -340 365 77 1762 2805 5 MP stroke
+0 j
+gs 1689 2401 686 555 rc
+  36   36 1762 2805 FO
+gr
+
+gs 1689 2401 686 555 rc
+  36   36 2127 2882 FO
+gr
+
+gs 1689 2401 686 555 rc
+  36   36 2301 2542 FO
+gr
+
+gs 1689 2401 686 555 rc
+  36   36 1869 2474 FO
+gr
+
+gs 1942 2603 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2015 2723 5 MP
+DP
+gr
+
+gr
+
+2015 2580 mt 
+( 1.8) s
+2015 2718 mt 
+( 0.1) s
+2015 2856 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+-51 324 -414 -41 107 -331 358 48 1404 2757 5 MP stroke
+0 j
+gs 1331 2360 612 519 rc
+  36   36 1404 2757 FO
+gr
+
+gs 1331 2360 612 519 rc
+  36   36 1762 2805 FO
+gr
+
+gs 1331 2360 612 519 rc
+  36   36 1869 2474 FO
+gr
+
+gs 1331 2360 612 519 rc
+  36   36 1455 2433 FO
+gr
+
+gs 1549 2544 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1622 2664 5 MP
+DP
+gr
+
+gr
+
+1622 2521 mt 
+( 1.9) s
+1622 2659 mt 
+( 0.3) s
+1622 2797 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+0 322 -406 -14 51 -324 355 16 1049 2741 5 MP stroke
+0 j
+gr
+
+gs 976 2346 553 485 rc
+  36   36 1049 2741 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2346 553 485 rc
+  36   36 1404 2757 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2346 553 485 rc
+  36   36 1455 2433 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2346 553 485 rc
+  36   36 1049 2419 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1166 2515 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1239 2635 5 MP
+DP
+gr
+
+gr
+
+1239 2492 mt 
+( 1.9) s
+1239 2630 mt 
+( 0.4) s
+1239 2768 mt 
+( 0.0) s
+gs 985 130 4942 4926 rc
+-324 51 -12 -458 322 0 14 407 3615 4592 5 MP stroke
+0 j
+gr
+
+gs 3542 4468 483 605 rc
+  36   36 3615 4592 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3542 4468 483 605 rc
+  36   36 3629 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3542 4468 483 605 rc
+  36   36 3951 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3542 4468 483 605 rc
+  36   36 3939 4541 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 3710 4710 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 3783 4830 5 MP
+DP
+gr
+
+gr
+
+3783 4687 mt 
+(  0.3) s
+3783 4825 mt 
+(  0.1) s
+3783 4963 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-331 107 -35 -470 324 -51 42 414 3573 4178 5 MP stroke
+0 j
+gs 3500 3998 513 668 rc
+  36   36 3573 4178 FO
+gr
+
+gs 3500 3998 513 668 rc
+  36   36 3615 4592 FO
+gr
+
+gs 3500 3998 513 668 rc
+  36   36 3939 4541 FO
+gr
+
+gs 3500 3998 513 668 rc
+  36   36 3904 4071 FO
+gr
+
+gs 3685 4273 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3758 4393 5 MP
+DP
+gr
+
+gr
+
+3758 4250 mt 
+(  0.5) s
+3758 4388 mt 
+(  0.0) s
+3758 4526 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-340 173 -58 -497 331 -107 67 431 3506 3747 5 MP stroke
+0 j
+gs 3433 3501 545 751 rc
+  36   36 3506 3747 FO
+gr
+
+gs 3433 3501 545 751 rc
+  36   36 3573 4178 FO
+gr
+
+gs 3433 3501 545 751 rc
+  36   36 3904 4071 FO
+gr
+
+gs 3433 3501 545 751 rc
+  36   36 3846 3574 FO
+gr
+
+gs 3634 3820 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3707 3940 5 MP
+DP
+gr
+
+gr
+
+3707 3797 mt 
+(  0.8) s
+3707 3935 mt 
+( -0.1) s
+3707 4073 mt 
+( -0.3) s
+gs 985 130 4942 4926 rc
+-353 257 -80 -550 340 -173 93 466 3413 3281 5 MP stroke
+0 j
+gs 3340 2951 580 870 rc
+  36   36 3413 3281 FO
+gr
+
+gs 3340 2951 580 870 rc
+  36   36 3506 3747 FO
+gr
+
+gs 3340 2951 580 870 rc
+  36   36 3846 3574 FO
+gr
+
+gs 3340 2951 580 870 rc
+  36   36 3766 3024 FO
+gr
+
+gs 3560 3333 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3633 3453 5 MP
+DP
+gr
+
+gr
+
+3633 3310 mt 
+(  1.1) s
+3633 3448 mt 
+( -0.2) s
+3633 3586 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-370 370 -98 -644 353 -257 115 531 3298 2750 5 MP stroke
+0 j
+gs 3225 2307 615 1048 rc
+  36   36 3298 2750 FO
+gr
+
+gs 3225 2307 615 1048 rc
+  36   36 3413 3281 FO
+gr
+
+gs 3225 2307 615 1048 rc
+  36   36 3766 3024 FO
+gr
+
+gs 3225 2307 615 1048 rc
+  36   36 3668 2380 FO
+gr
+
+gs 3463 2786 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3536 2906 5 MP
+DP
+gr
+
+gr
+
+3536 2763 mt 
+(  1.3) s
+3536 2901 mt 
+( -0.2) s
+3536 3039 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-257 354 -645 -99 370 -370 532 115 2766 2635 5 MP stroke
+0 j
+gs 2693 2208 1049 616 rc
+  36   36 2766 2635 FO
+gr
+
+gs 2693 2208 1049 616 rc
+  36   36 3298 2750 FO
+gr
+
+gs 2693 2208 1049 616 rc
+  36   36 3668 2380 FO
+gr
+
+gs 2693 2208 1049 616 rc
+  36   36 3023 2281 FO
+gr
+
+gs 3116 2438 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3189 2558 5 MP
+DP
+gr
+
+gr
+
+3189 2415 mt 
+(  1.5) s
+3189 2553 mt 
+( -0.2) s
+3189 2691 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-173 340 -549 -79 257 -354 465 93 2301 2542 5 MP stroke
+0 j
+gs 2228 2129 869 580 rc
+  36   36 2301 2542 FO
+gr
+
+gs 2228 2129 869 580 rc
+  36   36 2766 2635 FO
+gr
+
+gs 2228 2129 869 580 rc
+  36   36 3023 2281 FO
+gr
+
+gs 2228 2129 869 580 rc
+  36   36 2474 2202 FO
+gr
+
+gs 2568 2342 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2641 2462 5 MP
+DP
+gr
+
+gr
+
+2641 2319 mt 
+(  1.6) s
+2641 2457 mt 
+( -0.1) s
+2641 2595 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-107 330 -498 -58 173 -340 432 68 1869 2474 5 MP stroke
+0 j
+gs 1796 2071 752 545 rc
+  36   36 1869 2474 FO
+gr
+
+gs 1796 2071 752 545 rc
+  36   36 2301 2542 FO
+gr
+
+gs 1796 2071 752 545 rc
+  36   36 2474 2202 FO
+gr
+
+gs 1796 2071 752 545 rc
+  36   36 1976 2144 FO
+gr
+
+gs 2082 2267 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2155 2387 5 MP
+DP
+gr
+
+gr
+
+2155 2244 mt 
+( 1.7) s
+2155 2382 mt 
+( 0.1) s
+2155 2520 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+-52 325 -469 -36 107 -330 414 41 1455 2433 5 MP stroke
+0 j
+gs 1382 2035 668 513 rc
+  36   36 1455 2433 FO
+gr
+
+gs 1382 2035 668 513 rc
+  36   36 1869 2474 FO
+gr
+
+gs 1382 2035 668 513 rc
+  36   36 1976 2144 FO
+gr
+
+gs 1382 2035 668 513 rc
+  36   36 1507 2108 FO
+gr
+
+gs 1629 2217 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1702 2337 5 MP
+DP
+gr
+
+gr
+
+1702 2194 mt 
+( 1.7) s
+1702 2332 mt 
+( 0.2) s
+1702 2470 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+0 322 -458 -11 52 -325 406 14 1049 2419 5 MP stroke
+0 j
+gr
+
+gs 976 2024 605 483 rc
+  36   36 1049 2419 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2024 605 483 rc
+  36   36 1455 2433 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2024 605 483 rc
+  36   36 1507 2108 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 2024 605 483 rc
+  36   36 1049 2097 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1192 2191 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1265 2311 5 MP
+DP
+gr
+
+gr
+
+1265 2168 mt 
+( 1.7) s
+1265 2306 mt 
+( 0.3) s
+1265 2444 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+-325 52 -9 -510 322 0 12 458 3939 4541 5 MP stroke
+0 j
+gr
+
+gs 3866 4416 481 657 rc
+  36   36 3939 4541 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3866 4416 481 657 rc
+  36   36 3951 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3866 4416 481 657 rc
+  36   36 4273 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3866 4416 481 657 rc
+  36   36 4264 4489 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 4034 4684 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 4107 4804 5 MP
+DP
+gr
+
+gr
+
+4107 4661 mt 
+(  0.4) s
+4107 4799 mt 
+(  0.1) s
+4107 4937 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-330 107 -30 -525 325 -52 35 470 3904 4071 5 MP stroke
+0 j
+gs 3831 3891 507 724 rc
+  36   36 3904 4071 FO
+gr
+
+gs 3831 3891 507 724 rc
+  36   36 3939 4541 FO
+gr
+
+gs 3831 3891 507 724 rc
+  36   36 4264 4489 FO
+gr
+
+gs 3831 3891 507 724 rc
+  36   36 4234 3964 FO
+gr
+
+gs 4012 4193 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4085 4313 5 MP
+DP
+gr
+
+gr
+
+4085 4170 mt 
+(  0.6) s
+4085 4308 mt 
+(  0.1) s
+4085 4446 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-340 174 -48 -564 330 -107 58 497 3846 3574 5 MP stroke
+0 j
+gs 3773 3327 535 818 rc
+  36   36 3846 3574 FO
+gr
+
+gs 3773 3327 535 818 rc
+  36   36 3904 4071 FO
+gr
+
+gs 3773 3327 535 818 rc
+  36   36 4234 3964 FO
+gr
+
+gs 3773 3327 535 818 rc
+  36   36 4186 3400 FO
+gr
+
+gs 3969 3679 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4042 3799 5 MP
+DP
+gr
+
+gr
+
+4042 3656 mt 
+(  0.8) s
+4042 3794 mt 
+( -0.0) s
+4042 3932 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-353 256 -67 -632 340 -174 80 550 3766 3024 5 MP stroke
+0 j
+gs 3693 2695 567 953 rc
+  36   36 3766 3024 FO
+gr
+
+gs 3693 2695 567 953 rc
+  36   36 3846 3574 FO
+gr
+
+gs 3693 2695 567 953 rc
+  36   36 4186 3400 FO
+gr
+
+gs 3693 2695 567 953 rc
+  36   36 4119 2768 FO
+gr
+
+gs 3906 3119 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3979 3239 5 MP
+DP
+gr
+
+gr
+
+3979 3096 mt 
+(  1.1) s
+3979 3234 mt 
+( -0.1) s
+3979 3372 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-369 370 -82 -758 353 -256 98 644 3668 2380 5 MP stroke
+0 j
+gs 3595 1937 598 1161 rc
+  36   36 3668 2380 FO
+gr
+
+gs 3595 1937 598 1161 rc
+  36   36 3766 3024 FO
+gr
+
+gs 3595 1937 598 1161 rc
+  36   36 4119 2768 FO
+gr
+
+gs 3595 1937 598 1161 rc
+  36   36 4037 2010 FO
+gr
+
+gs 3825 2473 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3898 2593 5 MP
+DP
+gr
+
+gr
+
+3898 2450 mt 
+(  1.3) s
+3898 2588 mt 
+( -0.1) s
+3898 2726 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-257 353 -757 -82 369 -370 645 99 3023 2281 5 MP stroke
+0 j
+gs 2950 1855 1161 599 rc
+  36   36 3023 2281 FO
+gr
+
+gs 2950 1855 1161 599 rc
+  36   36 3668 2380 FO
+gr
+
+gs 2950 1855 1161 599 rc
+  36   36 4037 2010 FO
+gr
+
+gs 2950 1855 1161 599 rc
+  36   36 3280 1928 FO
+gr
+
+gs 3429 2077 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3502 2197 5 MP
+DP
+gr
+
+gr
+
+3502 2054 mt 
+(  1.5) s
+3502 2192 mt 
+( -0.1) s
+3502 2330 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-173 340 -633 -66 257 -353 549 79 2474 2202 5 MP stroke
+0 j
+gs 2401 1789 953 566 rc
+  36   36 2474 2202 FO
+gr
+
+gs 2401 1789 953 566 rc
+  36   36 3023 2281 FO
+gr
+
+gs 2401 1789 953 566 rc
+  36   36 3280 1928 FO
+gr
+
+gs 2401 1789 953 566 rc
+  36   36 2647 1862 FO
+gr
+
+gs 2783 1995 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2856 2115 5 MP
+DP
+gr
+
+gr
+
+2856 1972 mt 
+(  1.6) s
+2856 2110 mt 
+( -0.1) s
+2856 2248 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-108 330 -563 -48 173 -340 498 58 1976 2144 5 MP stroke
+0 j
+gs 1903 1741 818 535 rc
+  36   36 1976 2144 FO
+gr
+
+gs 1903 1741 818 535 rc
+  36   36 2474 2202 FO
+gr
+
+gs 1903 1741 818 535 rc
+  36   36 2647 1862 FO
+gr
+
+gs 1903 1741 818 535 rc
+  36   36 2084 1814 FO
+gr
+
+gs 2222 1932 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2295 2052 5 MP
+DP
+gr
+
+gr
+
+2295 1909 mt 
+( 1.6) s
+2295 2047 mt 
+( 0.0) s
+2295 2185 mt 
+( 0.2) s
+gs 985 130 4942 4926 rc
+-51 324 -526 -30 108 -330 469 36 1507 2108 5 MP stroke
+0 j
+gs 1434 1711 724 507 rc
+  36   36 1507 2108 FO
+gr
+
+gs 1434 1711 724 507 rc
+  36   36 1976 2144 FO
+gr
+
+gs 1434 1711 724 507 rc
+  36   36 2084 1814 FO
+gr
+
+gs 1434 1711 724 507 rc
+  36   36 1558 1784 FO
+gr
+
+gs 1708 1889 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1781 2009 5 MP
+DP
+gr
+
+gr
+
+1781 1866 mt 
+( 1.6) s
+1781 2004 mt 
+( 0.2) s
+1781 2142 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+0 323 -509 -10 51 -324 458 11 1049 2097 5 MP stroke
+0 j
+gr
+
+gs 976 1701 656 481 rc
+  36   36 1049 2097 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1701 656 481 rc
+  36   36 1507 2108 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1701 656 481 rc
+  36   36 1558 1784 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1701 656 481 rc
+  36   36 1049 1774 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1218 1868 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1291 1988 5 MP
+DP
+gr
+
+gr
+
+1291 1845 mt 
+( 1.6) s
+1291 1983 mt 
+( 0.3) s
+1291 2121 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+-324 51 -8 -561 323 0 9 510 4264 4489 5 MP stroke
+0 j
+gr
+
+gs 4191 4365 479 708 rc
+  36   36 4264 4489 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4191 4365 479 708 rc
+  36   36 4273 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4191 4365 479 708 rc
+  36   36 4596 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4191 4365 479 708 rc
+  36   36 4588 4438 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 4357 4658 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 4430 4778 5 MP
+DP
+gr
+
+gr
+
+4430 4635 mt 
+(  0.5) s
+4430 4773 mt 
+(  0.1) s
+4430 4911 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-330 108 -24 -582 324 -51 30 525 4234 3964 5 MP stroke
+0 j
+gs 4161 3783 501 780 rc
+  36   36 4234 3964 FO
+gr
+
+gs 4161 3783 501 780 rc
+  36   36 4264 4489 FO
+gr
+
+gs 4161 3783 501 780 rc
+  36   36 4588 4438 FO
+gr
+
+gs 4161 3783 501 780 rc
+  36   36 4564 3856 FO
+gr
+
+gs 4339 4114 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4412 4234 5 MP
+DP
+gr
+
+gr
+
+4412 4091 mt 
+(  0.7) s
+4412 4229 mt 
+(  0.1) s
+4412 4367 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-340 173 -38 -629 330 -108 48 564 4186 3400 5 MP stroke
+0 j
+gs 4113 3154 525 884 rc
+  36   36 4186 3400 FO
+gr
+
+gs 4113 3154 525 884 rc
+  36   36 4234 3964 FO
+gr
+
+gs 4113 3154 525 884 rc
+  36   36 4564 3856 FO
+gr
+
+gs 4113 3154 525 884 rc
+  36   36 4526 3227 FO
+gr
+
+gs 4304 3539 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4377 3659 5 MP
+DP
+gr
+
+gr
+
+4377 3516 mt 
+(  0.9) s
+4377 3654 mt 
+( -0.0) s
+4377 3792 mt 
+( -0.2) s
+gs 985 130 4942 4926 rc
+-354 257 -53 -716 340 -173 67 632 4119 2768 5 MP stroke
+0 j
+gs 4046 2438 554 1036 rc
+  36   36 4119 2768 FO
+gr
+
+gs 4046 2438 554 1036 rc
+  36   36 4186 3400 FO
+gr
+
+gs 4046 2438 554 1036 rc
+  36   36 4526 3227 FO
+gr
+
+gs 4046 2438 554 1036 rc
+  36   36 4473 2511 FO
+gr
+
+gs 4253 2904 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4326 3024 5 MP
+DP
+gr
+
+gr
+
+4326 2881 mt 
+(  1.1) s
+4326 3019 mt 
+( -0.1) s
+4326 3157 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-370 370 -66 -871 354 -257 82 758 4037 2010 5 MP stroke
+0 j
+gs 3964 1567 583 1275 rc
+  36   36 4037 2010 FO
+gr
+
+gs 3964 1567 583 1275 rc
+  36   36 4119 2768 FO
+gr
+
+gs 3964 1567 583 1275 rc
+  36   36 4473 2511 FO
+gr
+
+gs 3964 1567 583 1275 rc
+  36   36 4407 1640 FO
+gr
+
+gs 4186 2159 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4259 2279 5 MP
+DP
+gr
+
+gr
+
+4259 2136 mt 
+(  1.3) s
+4259 2274 mt 
+( -0.1) s
+4259 2412 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-256 353 -871 -65 370 -370 757 82 3280 1928 5 MP stroke
+0 j
+gs 3207 1502 1274 582 rc
+  36   36 3280 1928 FO
+gr
+
+gs 3207 1502 1274 582 rc
+  36   36 4037 2010 FO
+gr
+
+gs 3207 1502 1274 582 rc
+  36   36 4407 1640 FO
+gr
+
+gs 3207 1502 1274 582 rc
+  36   36 3536 1575 FO
+gr
+
+gs 3742 1715 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3815 1835 5 MP
+DP
+gr
+
+gr
+
+3815 1692 mt 
+(  1.5) s
+3815 1830 mt 
+( -0.1) s
+3815 1968 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-173 340 -716 -53 256 -353 633 66 2647 1862 5 MP stroke
+0 j
+gs 2574 1449 1036 553 rc
+  36   36 2647 1862 FO
+gr
+
+gs 2574 1449 1036 553 rc
+  36   36 3280 1928 FO
+gr
+
+gs 2574 1449 1036 553 rc
+  36   36 3536 1575 FO
+gr
+
+gs 2574 1449 1036 553 rc
+  36   36 2820 1522 FO
+gr
+
+gs 2998 1649 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3071 1769 5 MP
+DP
+gr
+
+gr
+
+3071 1626 mt 
+(  1.5) s
+3071 1764 mt 
+( -0.1) s
+3071 1902 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-107 331 -629 -39 173 -340 563 48 2084 1814 5 MP stroke
+0 j
+gs 2011 1410 883 526 rc
+  36   36 2084 1814 FO
+gr
+
+gs 2011 1410 883 526 rc
+  36   36 2647 1862 FO
+gr
+
+gs 2011 1410 883 526 rc
+  36   36 2820 1522 FO
+gr
+
+gs 2011 1410 883 526 rc
+  36   36 2191 1483 FO
+gr
+
+gs 2363 1597 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2436 1717 5 MP
+DP
+gr
+
+gr
+
+2436 1574 mt 
+( 1.5) s
+2436 1712 mt 
+( 0.0) s
+2436 1850 mt 
+( 0.2) s
+gs 985 130 4942 4926 rc
+-51 324 -582 -23 107 -331 526 30 1558 1784 5 MP stroke
+0 j
+gs 1485 1387 780 501 rc
+  36   36 1558 1784 FO
+gr
+
+gs 1485 1387 780 501 rc
+  36   36 2084 1814 FO
+gr
+
+gs 1485 1387 780 501 rc
+  36   36 2191 1483 FO
+gr
+
+gs 1485 1387 780 501 rc
+  36   36 1609 1460 FO
+gr
+
+gs 1788 1562 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1861 1682 5 MP
+DP
+gr
+
+gr
+
+1861 1539 mt 
+( 1.5) s
+1861 1677 mt 
+( 0.1) s
+1861 1815 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+0 322 -560 -8 51 -324 509 10 1049 1774 5 MP stroke
+0 j
+gr
+
+gs 976 1379 707 479 rc
+  36   36 1049 1774 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1379 707 479 rc
+  36   36 1558 1784 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1379 707 479 rc
+  36   36 1609 1460 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1379 707 479 rc
+  36   36 1049 1452 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1243 1544 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1316 1664 5 MP
+DP
+gr
+
+gr
+
+1316 1521 mt 
+( 1.5) s
+1316 1659 mt 
+( 0.2) s
+1316 1797 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+-324 51 -6 -612 322 0 8 561 4588 4438 5 MP stroke
+0 j
+gr
+
+gs 4515 4314 477 759 rc
+  36   36 4588 4438 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4515 4314 477 759 rc
+  36   36 4596 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4515 4314 477 759 rc
+  36   36 4918 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4515 4314 477 759 rc
+  36   36 4912 4387 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 4681 4633 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 4754 4753 5 MP
+DP
+gr
+
+gr
+
+4754 4610 mt 
+(  0.6) s
+4754 4748 mt 
+(  0.2) s
+4754 4886 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-331 107 -17 -638 324 -51 24 582 4564 3856 5 MP stroke
+0 j
+gs 4491 3676 495 836 rc
+  36   36 4564 3856 FO
+gr
+
+gs 4491 3676 495 836 rc
+  36   36 4588 4438 FO
+gr
+
+gs 4491 3676 495 836 rc
+  36   36 4912 4387 FO
+gr
+
+gs 4491 3676 495 836 rc
+  36   36 4895 3749 FO
+gr
+
+gs 4667 4035 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4740 4155 5 MP
+DP
+gr
+
+gr
+
+4740 4012 mt 
+(  0.7) s
+4740 4150 mt 
+(  0.1) s
+4740 4288 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-340 173 -29 -695 331 -107 38 629 4526 3227 5 MP stroke
+0 j
+gs 4453 2981 516 949 rc
+  36   36 4526 3227 FO
+gr
+
+gs 4453 2981 516 949 rc
+  36   36 4564 3856 FO
+gr
+
+gs 4453 2981 516 949 rc
+  36   36 4895 3749 FO
+gr
+
+gs 4453 2981 516 949 rc
+  36   36 4866 3054 FO
+gr
+
+gs 4640 3399 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4713 3519 5 MP
+DP
+gr
+
+gr
+
+4713 3376 mt 
+(  0.9) s
+4713 3514 mt 
+(  0.0) s
+4713 3652 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-353 257 -40 -800 340 -173 53 716 4473 2511 5 MP stroke
+0 j
+gs 4400 2181 540 1120 rc
+  36   36 4473 2511 FO
+gr
+
+gs 4400 2181 540 1120 rc
+  36   36 4526 3227 FO
+gr
+
+gs 4400 2181 540 1120 rc
+  36   36 4866 3054 FO
+gr
+
+gs 4400 2181 540 1120 rc
+  36   36 4826 2254 FO
+gr
+
+gs 4600 2689 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4673 2809 5 MP
+DP
+gr
+
+gr
+
+4673 2666 mt 
+(  1.2) s
+4673 2804 mt 
+( -0.0) s
+4673 2942 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-370 369 -49 -983 353 -257 66 871 4407 1640 5 MP stroke
+0 j
+gs 4334 1198 566 1387 rc
+  36   36 4407 1640 FO
+gr
+
+gs 4334 1198 566 1387 rc
+  36   36 4473 2511 FO
+gr
+
+gs 4334 1198 566 1387 rc
+  36   36 4826 2254 FO
+gr
+
+gs 4334 1198 566 1387 rc
+  36   36 4777 1271 FO
+gr
+
+gs 4548 1846 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4621 1966 5 MP
+DP
+gr
+
+gr
+
+4621 1823 mt 
+(  1.4) s
+4621 1961 mt 
+( -0.1) s
+4621 2099 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-257 353 -984 -49 370 -369 871 65 3536 1575 5 MP stroke
+0 j
+gs 3463 1149 1388 565 rc
+  36   36 3536 1575 FO
+gr
+
+gs 3463 1149 1388 565 rc
+  36   36 4407 1640 FO
+gr
+
+gs 3463 1149 1388 565 rc
+  36   36 4777 1271 FO
+gr
+
+gs 3463 1149 1388 565 rc
+  36   36 3793 1222 FO
+gr
+
+gs 4055 1354 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4128 1474 5 MP
+DP
+gr
+
+gr
+
+4128 1331 mt 
+(  1.5) s
+4128 1469 mt 
+( -0.1) s
+4128 1607 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-174 340 -799 -40 257 -353 716 53 2820 1522 5 MP stroke
+0 j
+gs 2747 1109 1120 540 rc
+  36   36 2820 1522 FO
+gr
+
+gs 2747 1109 1120 540 rc
+  36   36 3536 1575 FO
+gr
+
+gs 2747 1109 1120 540 rc
+  36   36 3793 1222 FO
+gr
+
+gs 2747 1109 1120 540 rc
+  36   36 2994 1182 FO
+gr
+
+gs 3213 1302 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3286 1422 5 MP
+DP
+gr
+
+gr
+
+3286 1279 mt 
+(  1.5) s
+3286 1417 mt 
+( -0.1) s
+3286 1555 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-107 330 -696 -29 174 -340 629 39 2191 1483 5 MP stroke
+0 j
+gs 2118 1080 950 516 rc
+  36   36 2191 1483 FO
+gr
+
+gs 2118 1080 950 516 rc
+  36   36 2820 1522 FO
+gr
+
+gs 2118 1080 950 516 rc
+  36   36 2994 1182 FO
+gr
+
+gs 2118 1080 950 516 rc
+  36   36 2298 1153 FO
+gr
+
+gs 2503 1262 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2576 1382 5 MP
+DP
+gr
+
+gr
+
+2576 1239 mt 
+(  1.5) s
+2576 1377 mt 
+( -0.0) s
+2576 1515 mt 
+(  0.2) s
+gs 985 130 4942 4926 rc
+-52 325 -637 -18 107 -330 582 23 1609 1460 5 MP stroke
+0 j
+gs 1536 1062 836 495 rc
+  36   36 1609 1460 FO
+gr
+
+gs 1536 1062 836 495 rc
+  36   36 2191 1483 FO
+gr
+
+gs 1536 1062 836 495 rc
+  36   36 2298 1153 FO
+gr
+
+gs 1536 1062 836 495 rc
+  36   36 1661 1135 FO
+gr
+
+gs 1867 1235 147 147 rc
+36 47 -36 47 -36 -47 36 -47 1940 1355 5 MP
+DP
+gr
+
+gr
+
+1940 1212 mt 
+( 1.4) s
+1940 1350 mt 
+( 0.1) s
+1940 1488 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+0 323 -612 -6 52 -325 560 8 1049 1452 5 MP stroke
+0 j
+gr
+
+gs 976 1056 759 478 rc
+  36   36 1049 1452 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1056 759 478 rc
+  36   36 1609 1460 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1056 759 478 rc
+  36   36 1661 1135 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 1056 759 478 rc
+  36   36 1049 1129 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1269 1221 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1342 1341 5 MP
+DP
+gr
+
+gr
+
+1342 1198 mt 
+( 1.4) s
+1342 1336 mt 
+( 0.1) s
+1342 1474 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+-325 52 -4 -664 323 0 6 612 4912 4387 5 MP stroke
+0 j
+gr
+
+gs 4839 4262 476 811 rc
+  36   36 4912 4387 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4839 4262 476 811 rc
+  36   36 4918 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4839 4262 476 811 rc
+  36   36 5241 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4839 4262 476 811 rc
+  36   36 5237 4335 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 5004 4607 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 5077 4727 5 MP
+DP
+gr
+
+gr
+
+5077 4584 mt 
+(  0.6) s
+5077 4722 mt 
+(  0.2) s
+5077 4860 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-330 107 -12 -693 325 -52 17 638 4895 3749 5 MP stroke
+0 j
+gs 4822 3569 489 892 rc
+  36   36 4895 3749 FO
+gr
+
+gs 4822 3569 489 892 rc
+  36   36 4912 4387 FO
+gr
+
+gs 4822 3569 489 892 rc
+  36   36 5237 4335 FO
+gr
+
+gs 4822 3569 489 892 rc
+  36   36 5225 3642 FO
+gr
+
+gs 4994 3955 147 147 rc
+36 47 -36 47 -36 -47 36 -47 5067 4075 5 MP
+DP
+gr
+
+gr
+
+5067 3932 mt 
+(  0.7) s
+5067 4070 mt 
+(  0.1) s
+5067 4208 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-340 173 -19 -761 330 -107 29 695 4866 3054 5 MP stroke
+0 j
+gs 4793 2808 506 1015 rc
+  36   36 4866 3054 FO
+gr
+
+gs 4793 2808 506 1015 rc
+  36   36 4895 3749 FO
+gr
+
+gs 4793 2808 506 1015 rc
+  36   36 5225 3642 FO
+gr
+
+gs 4793 2808 506 1015 rc
+  36   36 5206 2881 FO
+gr
+
+gs 4975 3258 147 147 rc
+36 47 -36 47 -36 -47 36 -47 5048 3378 5 MP
+DP
+gr
+
+gr
+
+5048 3235 mt 
+(  1.0) s
+5048 3373 mt 
+(  0.0) s
+5048 3511 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-353 256 -27 -883 340 -173 40 800 4826 2254 5 MP stroke
+0 j
+gs 4753 1925 527 1203 rc
+  36   36 4826 2254 FO
+gr
+
+gs 4753 1925 527 1203 rc
+  36   36 4866 3054 FO
+gr
+
+gs 4753 1925 527 1203 rc
+  36   36 5206 2881 FO
+gr
+
+gs 4753 1925 527 1203 rc
+  36   36 5179 1998 FO
+gr
+
+gs 4946 2474 147 147 rc
+36 47 -36 47 -36 -47 36 -47 5019 2594 5 MP
+DP
+gr
+
+gr
+
+5019 2451 mt 
+(  1.2) s
+5019 2589 mt 
+( -0.0) s
+5019 2727 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-369 370 -33 -1097 353 -256 49 983 4777 1271 5 MP stroke
+0 j
+gs 4704 828 549 1500 rc
+  36   36 4777 1271 FO
+gr
+
+gs 4704 828 549 1500 rc
+  36   36 4826 2254 FO
+gr
+
+gs 4704 828 549 1500 rc
+  36   36 5179 1998 FO
+gr
+
+gs 4704 828 549 1500 rc
+  36   36 5146  901 FO
+gr
+
+gs 4909 1533 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4982 1653 5 MP
+DP
+gr
+
+gr
+
+4982 1510 mt 
+(  1.4) s
+4982 1648 mt 
+( -0.0) s
+4982 1786 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-257 354 -1096 -33 369 -370 984 49 3793 1222 5 MP stroke
+0 j
+gs 3720 795 1500 550 rc
+  36   36 3793 1222 FO
+gr
+
+gs 3720 795 1500 550 rc
+  36   36 4777 1271 FO
+gr
+
+gs 3720 795 1500 550 rc
+  36   36 5146  901 FO
+gr
+
+gs 3720 795 1500 550 rc
+  36   36 4050  868 FO
+gr
+
+gs 4368 992 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4441 1112 5 MP
+DP
+gr
+
+gr
+
+4441  969 mt 
+(  1.5) s
+4441 1107 mt 
+( -0.0) s
+4441 1245 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-173 340 -883 -26 257 -354 799 40 2994 1182 5 MP stroke
+0 j
+gs 2921 769 1203 527 rc
+  36   36 2994 1182 FO
+gr
+
+gs 2921 769 1203 527 rc
+  36   36 3793 1222 FO
+gr
+
+gs 2921 769 1203 527 rc
+  36   36 4050  868 FO
+gr
+
+gs 2921 769 1203 527 rc
+  36   36 3167  842 FO
+gr
+
+gs 3428 955 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3501 1075 5 MP
+DP
+gr
+
+gr
+
+3501  932 mt 
+(  1.5) s
+3501 1070 mt 
+( -0.0) s
+3501 1208 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-108 331 -761 -20 173 -340 696 29 2298 1153 5 MP stroke
+0 j
+gs 2225 749 1016 507 rc
+  36   36 2298 1153 FO
+gr
+
+gs 2225 749 1016 507 rc
+  36   36 2994 1182 FO
+gr
+
+gs 2225 749 1016 507 rc
+  36   36 3167  842 FO
+gr
+
+gs 2225 749 1016 507 rc
+  36   36 2406  822 FO
+gr
+
+gs 2643 927 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2716 1047 5 MP
+DP
+gr
+
+gr
+
+2716  904 mt 
+(  1.4) s
+2716 1042 mt 
+( -0.0) s
+2716 1180 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-51 324 -694 -11 108 -331 637 18 1661 1135 5 MP stroke
+0 j
+gs 1588 738 892 489 rc
+  36   36 1661 1135 FO
+gr
+
+gs 1588 738 892 489 rc
+  36   36 2298 1153 FO
+gr
+
+gs 1588 738 892 489 rc
+  36   36 2406  822 FO
+gr
+
+gs 1588 738 892 489 rc
+  36   36 1712  811 FO
+gr
+
+gs 1946 907 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2019 1027 5 MP
+DP
+gr
+
+gr
+
+2019  884 mt 
+( 1.4) s
+2019 1022 mt 
+( 0.0) s
+2019 1160 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+0 322 -663 -4 51 -324 612 6 1049 1129 5 MP stroke
+0 j
+gr
+
+gs 976 734 810 475 rc
+  36   36 1049 1129 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 734 810 475 rc
+  36   36 1661 1135 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 734 810 475 rc
+  36   36 1712  811 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 734 810 475 rc
+  36   36 1049  807 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1295 897 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1368 1017 5 MP
+DP
+gr
+
+gr
+
+1368  874 mt 
+( 1.3) s
+1368 1012 mt 
+( 0.1) s
+1368 1150 mt 
+( 0.0) s
+gs 985 130 4942 4926 rc
+-324 51 -2 -715 322 0 4 664 5237 4335 5 MP stroke
+0 j
+gr
+
+gs 5164 4211 473 862 rc
+  36   36 5237 4335 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5164 4211 473 862 rc
+  36   36 5241 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5164 4211 473 862 rc
+  36   36 5563 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5164 4211 473 862 rc
+  36   36 5561 4284 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 5328 4581 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 5401 4701 5 MP
+DP
+gr
+
+gr
+
+5401 4558 mt 
+(  0.6) s
+5401 4696 mt 
+(  0.2) s
+5401 4834 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-330 108 -6 -750 324 -51 12 693 5225 3642 5 MP stroke
+0 j
+gs 5152 3461 483 948 rc
+  36   36 5225 3642 FO
+gr
+
+gs 5152 3461 483 948 rc
+  36   36 5237 4335 FO
+gr
+
+gs 5152 3461 483 948 rc
+  36   36 5561 4284 FO
+gr
+
+gs 5152 3461 483 948 rc
+  36   36 5555 3534 FO
+gr
+
+gs 5322 3876 147 147 rc
+36 47 -36 47 -36 -47 36 -47 5395 3996 5 MP
+DP
+gr
+
+gr
+
+5395 3853 mt 
+(  0.8) s
+5395 3991 mt 
+(  0.1) s
+5395 4129 mt 
+( -0.1) s
+gs 985 130 4942 4926 rc
+-340 174 -9 -827 330 -108 19 761 5206 2881 5 MP stroke
+0 j
+gs 5133 2634 496 1082 rc
+  36   36 5206 2881 FO
+gr
+
+gs 5133 2634 496 1082 rc
+  36   36 5225 3642 FO
+gr
+
+gs 5133 2634 496 1082 rc
+  36   36 5555 3534 FO
+gr
+
+gs 5133 2634 496 1082 rc
+  36   36 5546 2707 FO
+gr
+
+gs 5310 3118 147 147 rc
+36 47 -36 47 -36 -47 36 -47 5383 3238 5 MP
+DP
+gr
+
+gr
+
+5383 3095 mt 
+(  1.0) s
+5383 3233 mt 
+(  0.0) s
+5383 3371 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-354 257 -13 -966 340 -174 27 883 5179 1998 5 MP stroke
+0 j
+gs 5106 1668 514 1287 rc
+  36   36 5179 1998 FO
+gr
+
+gs 5106 1668 514 1287 rc
+  36   36 5206 2881 FO
+gr
+
+gs 5106 1668 514 1287 rc
+  36   36 5546 2707 FO
+gr
+
+gs 5106 1668 514 1287 rc
+  36   36 5533 1741 FO
+gr
+
+gs 5293 2259 147 147 rc
+36 47 -36 47 -36 -47 36 -47 5366 2379 5 MP
+DP
+gr
+
+gr
+
+5366 2236 mt 
+(  1.2) s
+5366 2374 mt 
+( -0.0) s
+5366 2512 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-370 370 -17 -1210 354 -257 33 1097 5146 901 5 MP stroke
+0 j
+gs 5073 458 534 1614 rc
+  36   36 5146  901 FO
+gr
+
+gs 5073 458 534 1614 rc
+  36   36 5179 1998 FO
+gr
+
+gs 5073 458 534 1614 rc
+  36   36 5533 1741 FO
+gr
+
+gs 5073 458 534 1614 rc
+  36   36 5516  531 FO
+gr
+
+gs 5271 1220 147 147 rc
+36 47 -36 47 -36 -47 36 -47 5344 1340 5 MP
+DP
+gr
+
+gr
+
+5344 1197 mt 
+(  1.5) s
+5344 1335 mt 
+( -0.0) s
+5344 1473 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-256 353 -1210 -16 370 -370 1096 33 4050 868 5 MP stroke
+0 j
+gs 3977 442 1613 533 rc
+  36   36 4050  868 FO
+gr
+
+gs 3977 442 1613 533 rc
+  36   36 5146  901 FO
+gr
+
+gs 3977 442 1613 533 rc
+  36   36 5516  531 FO
+gr
+
+gs 3977 442 1613 533 rc
+  36   36 4306  515 FO
+gr
+
+gs 4682 631 147 147 rc
+36 47 -36 47 -36 -47 36 -47 4755 751 5 MP
+DP
+gr
+
+gr
+
+4755  608 mt 
+(  1.6) s
+4755  746 mt 
+( -0.0) s
+4755  884 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-173 340 -966 -13 256 -353 883 26 3167 842 5 MP stroke
+0 j
+gs 3094 429 1286 513 rc
+  36   36 3167  842 FO
+gr
+
+gs 3094 429 1286 513 rc
+  36   36 4050  868 FO
+gr
+
+gs 3094 429 1286 513 rc
+  36   36 4306  515 FO
+gr
+
+gs 3094 429 1286 513 rc
+  36   36 3340  502 FO
+gr
+
+gs 3643 609 147 147 rc
+36 47 -36 47 -36 -47 36 -47 3716 729 5 MP
+DP
+gr
+
+gr
+
+3716  586 mt 
+(  1.5) s
+3716  724 mt 
+( -0.0) s
+3716  862 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-107 330 -827 -10 173 -340 761 20 2406 822 5 MP stroke
+0 j
+gs 2333 419 1081 497 rc
+  36   36 2406  822 FO
+gr
+
+gs 2333 419 1081 497 rc
+  36   36 3167  842 FO
+gr
+
+gs 2333 419 1081 497 rc
+  36   36 3340  502 FO
+gr
+
+gs 2333 419 1081 497 rc
+  36   36 2513  492 FO
+gr
+
+gs 2783 592 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2856 712 5 MP
+DP
+gr
+
+gr
+
+2856  569 mt 
+(  1.4) s
+2856  707 mt 
+( -0.0) s
+2856  845 mt 
+(  0.1) s
+gs 985 130 4942 4926 rc
+-52 325 -749 -6 107 -330 694 11 1712 811 5 MP stroke
+0 j
+gs 1639 413 948 483 rc
+  36   36 1712  811 FO
+gr
+
+gs 1639 413 948 483 rc
+  36   36 2406  822 FO
+gr
+
+gs 1639 413 948 483 rc
+  36   36 2513  492 FO
+gr
+
+gs 1639 413 948 483 rc
+  36   36 1764  486 FO
+gr
+
+gs 2026 580 147 147 rc
+36 47 -36 47 -36 -47 36 -47 2099 700 5 MP
+DP
+gr
+
+gr
+
+2099  557 mt 
+( 1.3) s
+2099  695 mt 
+( 0.0) s
+2099  833 mt 
+( 0.1) s
+gs 985 130 4942 4926 rc
+0 323 -715 -2 52 -325 663 4 1049 807 5 MP stroke
+0 j
+gr
+
+gs 976 411 862 474 rc
+  36   36 1049  807 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 411 862 474 rc
+  36   36 1712  811 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 411 862 474 rc
+  36   36 1764  486 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 411 862 474 rc
+  36   36 1049  484 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1320 574 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1393 694 5 MP
+DP
+gr
+
+gr
+
+1393  551 mt 
+( 1.3) s
+1393  689 mt 
+( 0.0) s
+1393  827 mt 
+( 0.0) s
+gs 985 130 4942 4926 rc
+-325 51 0 -766 323 0 2 715 5561 4284 5 MP stroke
+0 j
+gr
+
+gs 5488 4160 472 913 rc
+  36   36 5561 4284 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5488 4160 472 913 rc
+  36   36 5563 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5488 4160 472 913 rc
+  36   36 5886 4999 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5488 4160 472 913 rc
+  36   36 5886 4233 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 5651 4555 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 5724 4675 5 MP
+DP
+gr
+
+gr
+
+5724 4532 mt 
+(  0.7) s
+5724 4670 mt 
+(  0.2) s
+5724 4808 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-331 107 0 -806 325 -51 6 750 5555 3534 5 MP stroke
+0 j
+gr
+
+gs 5482 3354 478 1004 rc
+  36   36 5555 3534 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5482 3354 478 1004 rc
+  36   36 5561 4284 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5482 3354 478 1004 rc
+  36   36 5886 4233 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5482 3354 478 1004 rc
+  36   36 5886 3427 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 5649 3796 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 5722 3916 5 MP
+DP
+gr
+
+gr
+
+5722 3773 mt 
+(  0.8) s
+5722 3911 mt 
+(  0.1) s
+5722 4049 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-340 173 0 -893 331 -107 9 827 5546 2707 5 MP stroke
+0 j
+gr
+
+gs 5473 2461 487 1147 rc
+  36   36 5546 2707 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5473 2461 487 1147 rc
+  36   36 5555 3534 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5473 2461 487 1147 rc
+  36   36 5886 3427 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5473 2461 487 1147 rc
+  36   36 5886 2534 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 5645 2978 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 5718 3098 5 MP
+DP
+gr
+
+gr
+
+5718 2955 mt 
+(  1.0) s
+5718 3093 mt 
+(  0.0) s
+5718 3231 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-353 257 0 -1050 340 -173 13 966 5533 1741 5 MP stroke
+0 j
+gr
+
+gs 5460 1411 500 1370 rc
+  36   36 5533 1741 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5460 1411 500 1370 rc
+  36   36 5546 2707 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5460 1411 500 1370 rc
+  36   36 5886 2534 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5460 1411 500 1370 rc
+  36   36 5886 1484 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 5639 2044 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 5712 2164 5 MP
+DP
+gr
+
+gr
+
+5712 2021 mt 
+(  1.3) s
+5712 2159 mt 
+( -0.0) s
+5712 2297 mt 
+( -0.0) s
+gs 985 130 4942 4926 rc
+-370 369 0 -1322 353 -257 17 1210 5516 531 5 MP stroke
+0 j
+gr
+
+gs 5443 89 517 1726 rc
+  36   36 5516  531 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5443 89 517 1726 rc
+  36   36 5533 1741 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5443 89 517 1726 rc
+  36   36 5886 1484 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 5443 89 517 1726 rc
+  36   36 5886  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 5632 907 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 5705 1027 5 MP
+DP
+gr
+
+gr
+
+5705  884 mt 
+(  1.5) s
+5705 1022 mt 
+( -0.0) s
+5705 1160 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-257 353 -1323 0 370 -369 1210 16 4306 515 5 MP stroke
+0 j
+gr
+
+gs 4233 89 1727 516 rc
+  36   36 4306  515 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4233 89 1727 516 rc
+  36   36 5516  531 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4233 89 1727 516 rc
+  36   36 5886  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 4233 89 1727 516 rc
+  36   36 4563  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 4995 269 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 5068 389 5 MP
+DP
+gr
+
+gr
+
+5068  246 mt 
+(  1.7) s
+5068  384 mt 
+( -0.0) s
+5068  522 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-173 340 -1050 0 257 -353 966 13 3340 502 5 MP stroke
+0 j
+gr
+
+gs 3267 89 1370 500 rc
+  36   36 3340  502 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3267 89 1370 500 rc
+  36   36 4306  515 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3267 89 1370 500 rc
+  36   36 4563  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 3267 89 1370 500 rc
+  36   36 3513  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 3858 262 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 3931 382 5 MP
+DP
+gr
+
+gr
+
+3931  239 mt 
+(  1.6) s
+3931  377 mt 
+( -0.0) s
+3931  515 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-107 330 -893 0 173 -340 827 10 2513 492 5 MP stroke
+0 j
+gr
+
+gs 2440 89 1147 487 rc
+  36   36 2513  492 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2440 89 1147 487 rc
+  36   36 3340  502 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2440 89 1147 487 rc
+  36   36 3513  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 2440 89 1147 487 rc
+  36   36 2620  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 2924 256 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 2997 376 5 MP
+DP
+gr
+
+gr
+
+2997  233 mt 
+(  1.4) s
+2997  371 mt 
+( -0.0) s
+2997  509 mt 
+(  0.0) s
+gs 985 130 4942 4926 rc
+-51 324 -805 0 107 -330 749 6 1764 486 5 MP stroke
+0 j
+gr
+
+gs 1691 89 1003 477 rc
+  36   36 1764  486 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 1691 89 1003 477 rc
+  36   36 2513  492 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 1691 89 1003 477 rc
+  36   36 2620  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 1691 89 1003 477 rc
+  36   36 1815  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 2105 252 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 2178 372 5 MP
+DP
+gr
+
+gr
+
+2178  229 mt 
+( 1.3) s
+2178  367 mt 
+( 0.0) s
+2178  505 mt 
+( 0.0) s
+gs 985 130 4942 4926 rc
+0 322 -766 0 51 -324 715 2 1049 484 5 MP stroke
+0 j
+gr
+
+gs 976 89 913 471 rc
+  36   36 1049  484 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 89 913 471 rc
+  36   36 1764  486 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 89 913 471 rc
+  36   36 1815  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gr
+
+gs 976 89 913 471 rc
+  36   36 1049  162 FO
+gr
+
+gs 985 130 4942 4926 rc
+gs 1346 250 147 147 rc
+0 j
+36 47 -36 47 -36 -47 36 -47 1419 370 5 MP
+DP
+gr
+
+gr
+
+1419  227 mt 
+( 1.1) s
+1419  365 mt 
+( 0.0) s
+1419  503 mt 
+( 0.0) s
+gs 985 130 4942 4926 rc
+0 -65 -56 32 5886 4999 3 MP
+PP
+56 33 0 -65 -56 32 5886 4999 4 MP stroke
+0 -65 -56 32 5886 4233 3 MP
+PP
+56 33 0 -65 -56 32 5886 4233 4 MP stroke
+0 -64 -56 32 5886 3427 3 MP
+PP
+56 32 0 -64 -56 32 5886 3427 4 MP stroke
+0 -64 -56 32 5886 2534 3 MP
+PP
+56 32 0 -64 -56 32 5886 2534 4 MP stroke
+0 -65 -56 33 5886 1484 3 MP
+PP
+56 32 0 -65 -56 33 5886 1484 4 MP stroke
+0 -64 -56 32 5886 162 3 MP
+PP
+56 32 0 -64 -56 32 5886 162 4 MP stroke
+0 -65 -56 33 1049 3386 3 MP
+PP
+56 32 0 -65 -56 33 1049 3386 4 MP stroke
+0 -64 -56 32 1049 3064 3 MP
+PP
+56 32 0 -64 -56 32 1049 3064 4 MP stroke
+0 -65 -56 33 1049 2741 3 MP
+PP
+56 32 0 -65 -56 33 1049 2741 4 MP stroke
+0 -64 -56 32 1049 2419 3 MP
+PP
+56 32 0 -64 -56 32 1049 2419 4 MP stroke
+0 -65 -56 32 1049 2097 3 MP
+PP
+56 33 0 -65 -56 32 1049 2097 4 MP stroke
+0 -64 -56 32 1049 1774 3 MP
+PP
+56 32 0 -64 -56 32 1049 1774 4 MP stroke
+0 -65 -56 32 1049 1452 3 MP
+PP
+56 33 0 -65 -56 32 1049 1452 4 MP stroke
+0 -64 -56 32 1049 1129 3 MP
+PP
+56 32 0 -64 -56 32 1049 1129 4 MP stroke
+0 -65 -56 32 1049 807 3 MP
+PP
+56 33 0 -65 -56 32 1049 807 4 MP stroke
+0 -64 -56 32 1049 484 3 MP
+PP
+56 32 0 -64 -56 32 1049 484 4 MP stroke
+0 -64 -56 32 1049 162 3 MP
+PP
+56 32 0 -64 -56 32 1049 162 4 MP stroke
+64 0 -32 56 2661 4999 3 MP
+PP
+-32 -56 64 0 -32 56 2661 4999 4 MP stroke
+65 0 -33 56 2984 4999 3 MP
+PP
+-32 -56 65 0 -33 56 2984 4999 4 MP stroke
+64 0 -32 56 3306 4999 3 MP
+PP
+-32 -56 64 0 -32 56 3306 4999 4 MP stroke
+65 0 -33 56 3629 4999 3 MP
+PP
+-32 -56 65 0 -33 56 3629 4999 4 MP stroke
+64 0 -32 56 3951 4999 3 MP
+PP
+-32 -56 64 0 -32 56 3951 4999 4 MP stroke
+65 0 -32 56 4273 4999 3 MP
+PP
+-33 -56 65 0 -32 56 4273 4999 4 MP stroke
+64 0 -32 56 4596 4999 3 MP
+PP
+-32 -56 64 0 -32 56 4596 4999 4 MP stroke
+65 0 -32 56 4918 4999 3 MP
+PP
+-33 -56 65 0 -32 56 4918 4999 4 MP stroke
+64 0 -32 56 5241 4999 3 MP
+PP
+-32 -56 64 0 -32 56 5241 4999 4 MP stroke
+65 0 -32 56 5563 4999 3 MP
+PP
+-33 -56 65 0 -32 56 5563 4999 4 MP stroke
+64 0 -32 56 5886 4999 3 MP
+PP
+-32 -56 64 0 -32 56 5886 4999 4 MP stroke
+gr
+
+
+end %%Color Dict
+
+eplot
+%%EndObject
+
+epage
+end
+
+showpage
+
+%%Trailer
+%%BoundingBox:    80   179   523   608
+%%Pages: 001
+%%EOF

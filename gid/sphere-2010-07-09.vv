@@ -1,0 +1,19 @@
+BeginZE /home/benedikt/Dokumente/DA/Apfel/gid/sphere-2010-07-09.vv
+   x -102.346 252.346
+   y 204.904 -54.9038
+   z -464.711 314.711
+   e 129.904
+   v -0.958749 0.0822332 -0.188638
+   r 0.196098
+   m 0.915307 -0.0836991 0.393964 0 -0.231665 -0.909567 0.344992 0 0.329461 -0.407042 -0.851923 0 0 0 0 1
+   c 75 75 75
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 2
+   DrawingType 3
+   LightVector 9.44584 37.5862 144.258 0
+EndZE /home/benedikt/Dokumente/DA/Apfel/gid/sphere-2010-07-09.vv
+

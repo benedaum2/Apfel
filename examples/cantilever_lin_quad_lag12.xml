@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisLinear"/>
+  <time_step>
+    <ts time="1.0000000000" > 01</ts>
+  </time_step>
+  <global dim="2"/>
+  <node>
+    <n x="0.0000000000" y="0.0000000000"> 01</n>
+    <n x="50.000000000" y="0.0000000000"> 02</n>
+    <n x="100.00000000" y="0.0000000000"> 03</n>
+    <n x="0.0000000000" y="50.000000000"> 04</n>
+    <n x="50.000000000" y="50.000000000"> 05</n>
+    <n x="100.00000000" y="50.000000000"> 06</n>
+    <n x="0.0000000000" y="100.00000000"> 07</n>
+    <n x="50.000000000" y="100.00000000"> 08</n>
+    <n x="100.00000000" y="100.00000000"> 09</n>
+  </node>
+  <element>
+    <e gnn="01 02   04 05   07 08" et="2" m="1" > 01</e>
+    <e gnn="02 03   05 06   08 09" et="2" m="1" > 02</e>
+  </element>
+  <element_type>
+    <et>
+      1
+      <type  class="model.element.Quadrilateral" />
+      <shape class= "LagrangeQuadrilateral" />
+      <el_order  value= "1, 2"/>
+      <int_order value= "2, 2"/> 
+      <data field="thickness"    func="str2double" value="10" />
+    </et>    
+    <et>
+      2
+      <type  class="model.element.Quadrilateral" />
+      <shape class= "LagrangeQuadrilateral" />
+      <el_order  value= "1, 2"/>
+      <int_order value= "4, 4"/>
+      <data field="plain_strain" func="str2double" value="1"  />
+      <data field="newton_cotes" func="str2double" value="0" />      
+    </et>    
+  </element_type>
+  <material>
+    <m>
+      1
+      <data field="E"  func="str2double" value="2000" />
+      <data field="nu" func="str2double" value="0.0" />
+    </m>
+  </material>
+  <boundary_condition>
+    <bc gnn="01" dir="x" typ="d" val="   0"> 01</bc>
+    <bc gnn="01" dir="y" typ="d" val="   0"> 02</bc>
+    <bc gnn="04" dir="x" typ="d" val="   0"> 03</bc>
+    <bc gnn="04" dir="y" typ="d" val="   0"> 04</bc>
+    <bc gnn="07" dir="x" typ="d" val="   0"> 05</bc>
+    <bc gnn="07" dir="y" typ="d" val="   0"> 06</bc>
+    <bc gnn="09" dir="y" typ="n" val="-100"> 07</bc>
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+

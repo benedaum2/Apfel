@@ -1,0 +1,317 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisPlasticity"/> -->
+  <!-- enb -->
+  <flow_rule class="VonMises" sigma_f="1" />
+  <time_step>     
+    <ts time="0.6000" >001</ts>
+    <ts time="0.7000" >002</ts>
+    <ts time="0.8000" >003</ts>
+    <ts time="0.9000" >004</ts>
+    <ts time="1.0000" >005</ts>
+  </time_step>
+  <global dim="3"/>
+  <node>
+    <n x=" 000.0" y="-010.0" z="-000.5">001</n>
+    <n x=" 020.0" y="-010.0" z="-000.5">002</n>
+    <n x=" 040.0" y="-010.0" z="-000.5">003</n>
+    <n x=" 050.0" y="-010.0" z="-000.5">004</n>
+    <n x=" 060.0" y="-010.0" z="-000.5">005</n>
+    <n x=" 065.0" y="-010.0" z="-000.5">006</n>
+    <n x=" 070.0" y="-010.0" z="-000.5">007</n>
+    <n x=" 075.0" y="-010.0" z="-000.5">008</n>
+    <n x=" 080.0" y="-010.0" z="-000.5">009</n>
+    <n x=" 082.5" y="-010.0" z="-000.5">010</n>
+    <n x=" 085.0" y="-010.0" z="-000.5">011</n>
+    <n x=" 087.5" y="-010.0" z="-000.5">012</n>
+    <n x=" 090.0" y="-010.0" z="-000.5">013</n>
+    <n x=" 092.5" y="-010.0" z="-000.5">014</n>
+    <n x=" 095.0" y="-010.0" z="-000.5">015</n>
+    <n x=" 097.5" y="-010.0" z="-000.5">016</n>
+    <n x=" 100.0" y="-010.0" z="-000.5">017</n>
+
+    <n x=" 000.0" y=" 000.0" z="-000.5">018</n>
+    <n x=" 020.0" y=" 000.0" z="-000.5">019</n>
+    <n x=" 040.0" y=" 000.0" z="-000.5">020</n>
+    <n x=" 050.0" y=" 000.0" z="-000.5">021</n>
+    <n x=" 060.0" y=" 000.0" z="-000.5">022</n>
+    <n x=" 065.0" y=" 000.0" z="-000.5">023</n>
+    <n x=" 070.0" y=" 000.0" z="-000.5">024</n>
+    <n x=" 075.0" y=" 000.0" z="-000.5">025</n>
+    <n x=" 080.0" y=" 000.0" z="-000.5">026</n>
+    <n x=" 082.5" y=" 000.0" z="-000.5">027</n>
+    <n x=" 085.0" y=" 000.0" z="-000.5">028</n>
+    <n x=" 087.5" y=" 000.0" z="-000.5">029</n>
+    <n x=" 090.0" y=" 000.0" z="-000.5">030</n>
+    <n x=" 092.5" y=" 000.0" z="-000.5">031</n>
+    <n x=" 095.0" y=" 000.0" z="-000.5">032</n>
+    <n x=" 097.5" y=" 000.0" z="-000.5">033</n>
+    <n x=" 100.0" y=" 000.0" z="-000.5">034</n>
+
+    <n x=" 000.0" y=" 010.0" z="-000.5">035</n>
+    <n x=" 020.0" y=" 010.0" z="-000.5">036</n>
+    <n x=" 040.0" y=" 010.0" z="-000.5">037</n>
+    <n x=" 050.0" y=" 010.0" z="-000.5">038</n>
+    <n x=" 060.0" y=" 010.0" z="-000.5">039</n>
+    <n x=" 065.0" y=" 010.0" z="-000.5">040</n>
+    <n x=" 070.0" y=" 010.0" z="-000.5">041</n>
+    <n x=" 075.0" y=" 010.0" z="-000.5">042</n>
+    <n x=" 080.0" y=" 010.0" z="-000.5">043</n>
+    <n x=" 082.5" y=" 010.0" z="-000.5">044</n>
+    <n x=" 085.0" y=" 010.0" z="-000.5">045</n>
+    <n x=" 087.5" y=" 010.0" z="-000.5">046</n>
+    <n x=" 090.0" y=" 010.0" z="-000.5">047</n>
+    <n x=" 092.5" y=" 010.0" z="-000.5">048</n>
+    <n x=" 095.0" y=" 010.0" z="-000.5">049</n>
+    <n x=" 097.5" y=" 010.0" z="-000.5">050</n>
+    <n x=" 100.0" y=" 010.0" z="-000.5">051</n>
+
+
+
+    <n x=" 000.0" y="-010.0" z=" 000.5">052</n>
+    <n x=" 020.0" y="-010.0" z=" 000.5">053</n>
+    <n x=" 040.0" y="-010.0" z=" 000.5">054</n>
+    <n x=" 050.0" y="-010.0" z=" 000.5">055</n>
+    <n x=" 060.0" y="-010.0" z=" 000.5">056</n>
+    <n x=" 065.0" y="-010.0" z=" 000.5">057</n>
+    <n x=" 070.0" y="-010.0" z=" 000.5">058</n>
+    <n x=" 075.0" y="-010.0" z=" 000.5">059</n>
+    <n x=" 080.0" y="-010.0" z=" 000.5">060</n>
+    <n x=" 082.5" y="-010.0" z=" 000.5">061</n>
+    <n x=" 085.0" y="-010.0" z=" 000.5">062</n>
+    <n x=" 087.5" y="-010.0" z=" 000.5">063</n>
+    <n x=" 090.0" y="-010.0" z=" 000.5">064</n>
+    <n x=" 092.5" y="-010.0" z=" 000.5">065</n>
+    <n x=" 095.0" y="-010.0" z=" 000.5">066</n>
+    <n x=" 097.5" y="-010.0" z=" 000.5">067</n>
+    <n x=" 100.0" y="-010.0" z=" 000.5">068</n>
+
+    <n x=" 000.0" y=" 000.0" z=" 000.5">069</n>
+    <n x=" 020.0" y=" 000.0" z=" 000.5">070</n>
+    <n x=" 040.0" y=" 000.0" z=" 000.5">071</n>
+    <n x=" 050.0" y=" 000.0" z=" 000.5">072</n>
+    <n x=" 060.0" y=" 000.0" z=" 000.5">073</n>
+    <n x=" 065.0" y=" 000.0" z=" 000.5">074</n>
+    <n x=" 070.0" y=" 000.0" z=" 000.5">075</n>
+    <n x=" 075.0" y=" 000.0" z=" 000.5">076</n>
+    <n x=" 080.0" y=" 000.0" z=" 000.5">077</n>
+    <n x=" 082.5" y=" 000.0" z=" 000.5">078</n>
+    <n x=" 085.0" y=" 000.0" z=" 000.5">079</n>
+    <n x=" 087.5" y=" 000.0" z=" 000.5">080</n>
+    <n x=" 090.0" y=" 000.0" z=" 000.5">081</n>
+    <n x=" 092.5" y=" 000.0" z=" 000.5">082</n>
+    <n x=" 095.0" y=" 000.0" z=" 000.5">083</n>
+    <n x=" 097.5" y=" 000.0" z=" 000.5">084</n>
+    <n x=" 100.0" y=" 000.0" z=" 000.5">085</n>
+
+    <n x=" 000.0" y=" 010.0" z=" 000.5">086</n>
+    <n x=" 020.0" y=" 010.0" z=" 000.5">087</n>
+    <n x=" 040.0" y=" 010.0" z=" 000.5">088</n>
+    <n x=" 050.0" y=" 010.0" z=" 000.5">089</n>
+    <n x=" 060.0" y=" 010.0" z=" 000.5">090</n>
+    <n x=" 065.0" y=" 010.0" z=" 000.5">091</n>
+    <n x=" 070.0" y=" 010.0" z=" 000.5">092</n>
+    <n x=" 075.0" y=" 010.0" z=" 000.5">093</n>
+    <n x=" 080.0" y=" 010.0" z=" 000.5">094</n>
+    <n x=" 082.5" y=" 010.0" z=" 000.5">095</n>
+    <n x=" 085.0" y=" 010.0" z=" 000.5">096</n>
+    <n x=" 087.5" y=" 010.0" z=" 000.5">097</n>
+    <n x=" 090.0" y=" 010.0" z=" 000.5">098</n>
+    <n x=" 092.5" y=" 010.0" z=" 000.5">099</n>
+    <n x=" 095.0" y=" 010.0" z=" 000.5">100</n>
+    <n x=" 097.5" y=" 010.0" z=" 000.5">101</n>
+    <n x=" 100.0" y=" 010.0" z=" 000.5">102</n>
+  </node>
+  <element>
+    <e gnn="001 002 003 018 019 020 035 036 037 052 053 054 069 070 071 086 087 088 " et="1" m="1">01</e>
+    <e gnn="003 004 005 020 021 022 037 038 039 054 055 056 071 072 073 088 089 090 " et="1" m="1">02</e>
+    <e gnn="005 006 007 022 023 024 039 040 041 056 057 058 073 074 075 090 091 092 " et="2" m="1">03</e>
+    <e gnn="007 008 009 024 025 026 041 042 043 058 059 060 075 076 077 092 093 094 " et="2" m="1">04</e>
+    <e gnn="009 010 011 026 027 028 043 044 045 060 061 062 077 078 079 094 095 096 " et="2" m="1">05</e>
+    <e gnn="011 012 013 028 029 030 045 046 047 062 063 064 079 080 081 096 097 098 " et="2" m="1">06</e>
+    <e gnn="013 014 015 030 031 032 047 048 049 064 065 066 081 082 083 098 099 100 " et="2" m="1">07</e>
+    <e gnn="015 016 017 032 033 034 049 050 051 066 067 068 083 084 085 100 101 102 " et="2" m="1">08</e>
+  </element>
+  <element_type>
+    <et>
+      1
+      <type  class="plasticity.element.Hexahedron" /> -->
+      <shape class="LagrangeHexahedron" />
+      <el_order  value="2, 2, 1" />      
+      <int_order value="2, 3, 1" />
+      <data field="plain_strain" func="str2double" value="1" />
+    </et>
+    <et>
+      2
+      <type  class="plasticity.element.Hexahedron" /> -->
+      <shape class="LagrangeHexahedron" />
+      <el_order  value="2, 2, 1" />      
+      <int_order value="3, 4, 1" />
+      <data field="plain_strain" func="str2double" value="1" />
+      <data field="newton_cotes" func="str2double" value="1" />
+    </et>
+  </element_type>
+  <material>
+    <m>
+      1
+      <data field="E"  func="str2double" value="2000" />
+      <data field="nu" func="str2double" value="0" />
+    </m>
+  </material>
+  <boundary_condition>
+    <bc gnn="017" dir="x" typ="d" val="      0">01</bc>
+    <bc gnn="034" dir="x" typ="d" val="      0">02</bc>
+    <bc gnn="051" dir="x" typ="d" val="      0">03</bc>
+    <bc gnn="068" dir="x" typ="d" val="      0">04</bc>
+    <bc gnn="085" dir="x" typ="d" val="      0">05</bc>
+    <bc gnn="102" dir="x" typ="d" val="      0">06</bc>    
+
+    <bc gnn="001" dir="y" typ="d" val="      0">07</bc>
+    <bc gnn="018" dir="y" typ="d" val="      0">08</bc>
+    <bc gnn="035" dir="y" typ="d" val="      0">09</bc>
+    <bc gnn="052" dir="y" typ="d" val="      0">10</bc>
+    <bc gnn="069" dir="y" typ="d" val="      0">11</bc>
+    <bc gnn="086" dir="y" typ="d" val="      0">12</bc>   
+    
+    <bc gnn="017" dir="y" typ="d" val="-0.250">13</bc>
+    <bc gnn="034" dir="y" typ="d" val="-0.250">14</bc>
+    <bc gnn="051" dir="y" typ="d" val="-0.250">15</bc>
+    <bc gnn="068" dir="y" typ="d" val="-0.250">16</bc>
+    <bc gnn="085" dir="y" typ="d" val="-0.250">17</bc>
+    <bc gnn="102" dir="y" typ="d" val="-0.250">18</bc>
+    
+    <bc gnn="001" dir="z" typ="d" val="     0">019</bc>
+    <bc gnn="002" dir="z" typ="d" val="     0">020</bc>
+    <bc gnn="003" dir="z" typ="d" val="     0">021</bc>
+    <bc gnn="004" dir="z" typ="d" val="     0">022</bc>
+    <bc gnn="005" dir="z" typ="d" val="     0">023</bc>
+    <bc gnn="006" dir="z" typ="d" val="     0">024</bc>
+    <bc gnn="007" dir="z" typ="d" val="     0">025</bc>
+    <bc gnn="008" dir="z" typ="d" val="     0">026</bc>
+    <bc gnn="009" dir="z" typ="d" val="     0">027</bc>
+    <bc gnn="010" dir="z" typ="d" val="     0">028</bc>
+    <bc gnn="011" dir="z" typ="d" val="     0">029</bc>
+    <bc gnn="012" dir="z" typ="d" val="     0">030</bc>
+    <bc gnn="013" dir="z" typ="d" val="     0">031</bc>
+    <bc gnn="014" dir="z" typ="d" val="     0">032</bc>
+    <bc gnn="015" dir="z" typ="d" val="     0">033</bc>
+    <bc gnn="016" dir="z" typ="d" val="     0">034</bc>
+    <bc gnn="017" dir="z" typ="d" val="     0">035</bc>
+    <bc gnn="018" dir="z" typ="d" val="     0">036</bc>
+    <bc gnn="019" dir="z" typ="d" val="     0">037</bc>
+    <bc gnn="020" dir="z" typ="d" val="     0">038</bc>
+    <bc gnn="021" dir="z" typ="d" val="     0">039</bc>
+    <bc gnn="022" dir="z" typ="d" val="     0">040</bc>
+    <bc gnn="023" dir="z" typ="d" val="     0">041</bc>
+    <bc gnn="024" dir="z" typ="d" val="     0">042</bc>
+    <bc gnn="025" dir="z" typ="d" val="     0">043</bc>
+    <bc gnn="026" dir="z" typ="d" val="     0">044</bc>
+    <bc gnn="027" dir="z" typ="d" val="     0">045</bc>
+    <bc gnn="028" dir="z" typ="d" val="     0">046</bc>
+    <bc gnn="029" dir="z" typ="d" val="     0">047</bc>
+    <bc gnn="030" dir="z" typ="d" val="     0">048</bc>
+    <bc gnn="031" dir="z" typ="d" val="     0">049</bc>
+    <bc gnn="032" dir="z" typ="d" val="     0">050</bc>
+    <bc gnn="033" dir="z" typ="d" val="     0">051</bc>
+    <bc gnn="034" dir="z" typ="d" val="     0">052</bc>
+    <bc gnn="035" dir="z" typ="d" val="     0">053</bc>
+    <bc gnn="036" dir="z" typ="d" val="     0">054</bc>
+    <bc gnn="037" dir="z" typ="d" val="     0">055</bc>
+    <bc gnn="038" dir="z" typ="d" val="     0">056</bc>
+    <bc gnn="039" dir="z" typ="d" val="     0">057</bc>
+    <bc gnn="040" dir="z" typ="d" val="     0">058</bc>
+    <bc gnn="041" dir="z" typ="d" val="     0">059</bc>
+    <bc gnn="042" dir="z" typ="d" val="     0">060</bc>
+    <bc gnn="043" dir="z" typ="d" val="     0">061</bc>
+    <bc gnn="044" dir="z" typ="d" val="     0">062</bc>
+    <bc gnn="045" dir="z" typ="d" val="     0">063</bc>
+    <bc gnn="046" dir="z" typ="d" val="     0">064</bc>
+    <bc gnn="047" dir="z" typ="d" val="     0">065</bc>
+    <bc gnn="048" dir="z" typ="d" val="     0">066</bc>
+    <bc gnn="049" dir="z" typ="d" val="     0">067</bc>
+    <bc gnn="050" dir="z" typ="d" val="     0">068</bc>
+    <bc gnn="051" dir="z" typ="d" val="     0">069</bc>
+    <bc gnn="052" dir="z" typ="d" val="     0">070</bc>
+    <bc gnn="053" dir="z" typ="d" val="     0">071</bc>
+    <bc gnn="054" dir="z" typ="d" val="     0">072</bc>
+    <bc gnn="055" dir="z" typ="d" val="     0">073</bc>
+    <bc gnn="056" dir="z" typ="d" val="     0">074</bc>
+    <bc gnn="057" dir="z" typ="d" val="     0">075</bc>
+    <bc gnn="058" dir="z" typ="d" val="     0">076</bc>
+    <bc gnn="059" dir="z" typ="d" val="     0">077</bc>
+    <bc gnn="060" dir="z" typ="d" val="     0">078</bc>
+    <bc gnn="061" dir="z" typ="d" val="     0">079</bc>
+    <bc gnn="062" dir="z" typ="d" val="     0">080</bc>
+    <bc gnn="063" dir="z" typ="d" val="     0">081</bc>
+    <bc gnn="064" dir="z" typ="d" val="     0">082</bc>
+    <bc gnn="065" dir="z" typ="d" val="     0">083</bc>
+    <bc gnn="066" dir="z" typ="d" val="     0">084</bc>
+    <bc gnn="067" dir="z" typ="d" val="     0">085</bc>
+    <bc gnn="068" dir="z" typ="d" val="     0">086</bc>
+    <bc gnn="069" dir="z" typ="d" val="     0">087</bc>
+    <bc gnn="070" dir="z" typ="d" val="     0">088</bc>
+    <bc gnn="071" dir="z" typ="d" val="     0">089</bc>
+    <bc gnn="072" dir="z" typ="d" val="     0">090</bc>
+    <bc gnn="073" dir="z" typ="d" val="     0">091</bc>
+    <bc gnn="074" dir="z" typ="d" val="     0">092</bc>
+    <bc gnn="075" dir="z" typ="d" val="     0">093</bc>
+    <bc gnn="076" dir="z" typ="d" val="     0">094</bc>
+    <bc gnn="077" dir="z" typ="d" val="     0">095</bc>
+    <bc gnn="078" dir="z" typ="d" val="     0">096</bc>
+    <bc gnn="079" dir="z" typ="d" val="     0">097</bc>
+    <bc gnn="080" dir="z" typ="d" val="     0">098</bc>
+    <bc gnn="081" dir="z" typ="d" val="     0">099</bc>
+    <bc gnn="082" dir="z" typ="d" val="     0">100</bc>
+    <bc gnn="083" dir="z" typ="d" val="     0">101</bc>
+    <bc gnn="084" dir="z" typ="d" val="     0">102</bc>
+    <bc gnn="085" dir="z" typ="d" val="     0">103</bc>
+    <bc gnn="086" dir="z" typ="d" val="     0">104</bc>
+    <bc gnn="087" dir="z" typ="d" val="     0">105</bc>
+    <bc gnn="088" dir="z" typ="d" val="     0">106</bc>
+    <bc gnn="089" dir="z" typ="d" val="     0">107</bc>
+    <bc gnn="090" dir="z" typ="d" val="     0">108</bc>
+    <bc gnn="091" dir="z" typ="d" val="     0">109</bc>
+    <bc gnn="092" dir="z" typ="d" val="     0">110</bc>
+    <bc gnn="093" dir="z" typ="d" val="     0">111</bc>
+    <bc gnn="094" dir="z" typ="d" val="     0">112</bc>
+    <bc gnn="095" dir="z" typ="d" val="     0">113</bc>
+    <bc gnn="096" dir="z" typ="d" val="     0">114</bc>
+    <bc gnn="097" dir="z" typ="d" val="     0">115</bc>
+    <bc gnn="098" dir="z" typ="d" val="     0">116</bc>
+    <bc gnn="099" dir="z" typ="d" val="     0">117</bc>
+    <bc gnn="100" dir="z" typ="d" val="     0">118</bc>
+    <bc gnn="101" dir="z" typ="d" val="     0">119</bc>
+    <bc gnn="102" dir="z" typ="d" val="     0">120</bc>
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

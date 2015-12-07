@@ -1,0 +1,19 @@
+BeginZE /home/benedikt/Dokumente/DA/Apfel/gid/ans1.vv
+   x -102.346 252.346
+   y 204.904 -54.904
+   z -464.711 314.711
+   e 129.904
+   v -0.0794594 0.786566 -0.103553
+   r -0.603553
+   m -0.258819 -0.25 -0.933013 0 -3.0314e-09 0.965926 -0.258819 0 0.965926 -0.0669873 -0.25 0 0 0 0 1
+   c 75 75 75
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 2
+   DrawingType 3
+   LightVector -50 50 2000 0
+EndZE /home/benedikt/Dokumente/DA/Apfel/gid/ans1.vv
+

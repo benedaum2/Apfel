@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<analysis>
+  <analysis_type class="AnalysisLinear"/>
+  <time_step>
+    <ts time="1.0000000000" >  1</ts>
+  </time_step>
+  <global dim="2"/>
+  <node>
+    <n x="0.0000000000" y="0.0000000000"> 01</n>
+    <n x="33.333333333" y="0.0000000000"> 02</n>
+    <n x="66.666666666" y="0.0000000000"> 03</n>
+    <n x="100.00000000" y="0.0000000000"> 04</n>
+    <n x="0.0000000000" y="33.333333333"> 05</n>
+    <n x="33.333333333" y="33.333333333"> 06</n>
+    <n x="66.666666666" y="33.333333333"> 07</n>
+    <n x="100.00000000" y="33.333333333"> 08</n>
+    <n x="0.0000000000" y="66.666666666"> 09</n>
+    <n x="33.333333333" y="66.666666666"> 10</n>
+    <n x="66.666666666" y="66.666666666"> 11</n>
+    <n x="100.00000000" y="66.666666666"> 12</n>
+    <n x="0.0000000000" y="100.00000000"> 13</n>
+    <n x="33.333333333" y="100.00000000"> 14</n>
+    <n x="66.666666666" y="100.00000000"> 15</n>
+    <n x="100.00000000" y="100.00000000"> 16</n>
+  </node>
+  <element>
+    <e gnn="01 04 13 02 03 07 10 09 05 06" et="1" m="1" >1</e>
+    <e gnn="04 16 13 08 12 15 14 10 07 11" et="1" m="1" >2</e>
+  </element>
+  <element_type>
+    <et>
+      1
+      <type  class= "ElementPlateTri" />
+      <shape class= "LagrangeTriangle" />
+      <el_order  value= "3"/>
+      <int_order value= "3"/>
+      <data  id=    "thickness" value="10" />
+    </et>
+  </element_type>
+  <material>
+    <m>
+      1
+      <data id="E"  value="2000"/>
+      <data id="nu" value="0" />
+    </m>
+  </material>
+  <boundary_condition>
+    <bc gnn="01" dir="x" typ="d" val="   0">1</bc>
+    <bc gnn="01" dir="y" typ="d" val="   0">2</bc>
+    <bc gnn="05" dir="x" typ="d" val="   0">3</bc>
+    <bc gnn="05" dir="y" typ="d" val="   0">4</bc>
+    <bc gnn="09" dir="x" typ="d" val="   0">5</bc>
+    <bc gnn="09" dir="y" typ="d" val="   0">6</bc>
+    <bc gnn="13" dir="x" typ="d" val="   0">7</bc>
+    <bc gnn="13" dir="y" typ="d" val="   0">8</bc>
+    <bc gnn="16" dir="y" typ="n" val="-100">9</bc>
+  </boundary_condition>
+</analysis>
+
+
+
+
+
+
+
+
+
+

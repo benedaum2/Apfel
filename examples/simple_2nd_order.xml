@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<problem>
+  <analysis class="AnalysisLinear"/>
+  <global dim="2"/>
+  <node>
+    <n x="0.0000000000" y="0.0000000000" >1</n>
+    <n x="100.00000000" y="0.0000000000" >2</n>
+    <n x="0.0000000000" y="100.00000000" >3</n>
+    <n x="50.000000000" y="0.0000000000" >4</n>
+    <n x="50.000000000" y="50.000000000" >5</n>
+    <n x="0.0000000000" y="50.000000000" >6</n>
+  </node>
+  <element>
+    <e gnn="1 2 3 4 5 6" et="1" m="1" >1</e>
+  </element>
+  <element_type>
+    <et class="ElementPlateTri" ds="2" >1</et>
+  </element_type>
+  <material>
+    <m name="Steel" ds="1">1</m>
+  </material>
+  <data_set>
+    <ds>
+      1
+      <data id="E" value="2000"/>
+      <data id="nu" value="0" />
+    </ds>
+    <ds>
+      2
+      <data id="thickness" value="10"/>
+    </ds>
+  </data_set>
+  <boundary_condition>
+    <bc gnn="1" dir="y" typ="d" val="   0">2</bc>
+    <bc gnn="2" dir="y" typ="d" val="   0">4</bc>
+    <bc gnn="4" dir="y" typ="d" val="   0">7</bc>
+
+    <bc gnn="1" dir="x" typ="d" val="   0">1</bc>
+    <bc gnn="3" dir="x" typ="d" val="   0">6</bc>
+    <bc gnn="6" dir="x" typ="d" val="   0">8</bc>
+
+    <bc gnn="3" dir="y" typ="n" val=" 100">6</bc>
+  </boundary_condition>
+</problem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
