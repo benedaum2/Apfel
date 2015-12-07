@@ -3,9 +3,10 @@ in the Matlab command shell run the following commands
 1. set_env()
    makes the folder structure known to matlab
 2. a = apfel('examples/cantilever_lin_quad_lag23.xml')
-   this starts starts the simulation of the predefined xml-input file 'cantilever_lin_quad_lag23.xml'
-   feel free to try other input examples, however, the postprocessing routine is preconfigured for the
+   this starts starts the simulation of the predefined xml-input file 
+   'cantilever_lin_quad_lag23.xml'. Feel free to try other input examples,
+   however, the postprocessing routine is preconfigured for the
    cantilever example.
 3. frame = post(a, 1)
-   Display the results by the integrated 2d postprocessing routine. For 3d problems the open source 
-   programm git can be used
+   Display the results by the integrated 2d postprocessing routine. 
+   For 3d problems the open source programm git can be used
