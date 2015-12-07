@@ -9,4 +9,4 @@ in the Matlab command shell run the following commands
    cantilever example.
 3. frame = post(a, 1)
    Display the results by the integrated 2d postprocessing routine. 
-   For 3d problems the open source programm git can be used
+   For 3d problems the open source programm GiD can be used
