@@ -1,3 +1,6 @@
+APFEL: analysis of Anisotropic Plasticity by Finite ELements
+parts of this software are based on SOOFEAM (http://www.soofea.org/)
+
 Usage Instructions:
 in the Matlab command shell run the following commands:
 
@@ -7,7 +10,7 @@ in the Matlab command shell run the following commands:
 2. a = apfel('examples/cantilever_lin_quad_lag23.xml')
    this starts starts the simulation of the predefined xml-input file 
    'cantilever_lin_quad_lag23.xml'. A describtion of this particular 
-	 problem is provided (in german) in chapter 12 of the master's thesis,
+	 problem is provided (in german) in chapter 12 of my master's thesis,
 	 see p. 53 in Diplomarbeit_Daum.pdf.
 	 
 	 Feel free to try the other input examples,
