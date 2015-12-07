@@ -2,7 +2,8 @@ APFEL: analysis of Anisotropic Plasticity by Finite ELements
 parts of this software are based on SOOFEAM (http://www.soofea.org/)
 
 Usage Instructions:
-in the Matlab command shell run the following commands:
+change to the directory Apfel/, then run the following commands
+in the Matlab command shell:
 
 1. set_env()
    makes the folder structure known to matlab
