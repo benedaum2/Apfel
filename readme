@@ -11,10 +11,10 @@ in the Matlab command shell:
 2. a = apfel('examples/cantilever_lin_quad_lag23.xml')
    this starts starts the simulation of the predefined xml-input file 
    'cantilever_lin_quad_lag23.xml'. A describtion of this particular 
-	 problem is provided (in german) in chapter 12 of my master's thesis,
-	 see p. 53 in Diplomarbeit_Daum.pdf.
+   problem is provided (in german) in chapter 12 of my master's thesis,
+   see p. 53 in Diplomarbeit_Daum.pdf.
 	 
-	 Feel free to try the other input examples,
+   Feel free to try the other input examples,
    however, the postprocessing routine is preconfigured for the
    cantilever example.
 
@@ -22,6 +22,6 @@ in the Matlab command shell:
    Display the results by the integrated 2d postprocessing routine. 
    For 3d problems the open source programm GiD can be used
 
-	 for the example 'cantilever_lin_quad_lag23.xml'
-	 the result should look like ./figures/collapse_quad-2010-05-14_3x4-crop.pdf
+   for the example 'cantilever_lin_quad_lag23.xml'
+   the result should look like ./figures/collapse_quad-2010-05-14_3x4-crop.pdf
 
