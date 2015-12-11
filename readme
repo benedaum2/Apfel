@@ -8,20 +8,36 @@ in the Matlab command shell:
 1. set_env()
    makes the folder structure known to matlab
 
-2. a = apfel('examples/cantilever_lin_quad_lag23.xml')
+2. a = apfel('examples/collapse_quad_coarse.xml')
    this starts the simulation of the predefined xml-input file 
-   'cantilever_lin_quad_lag23.xml'. A describtion of this particular 
-   problem is provided (in german) in chapter 12 of my master's thesis,
-   see p. 53 in Diplomarbeit_Daum.pdf.
+   'collapse_quad_coarse.xml'. The simulation takes about 2 mins.
+    
+   The model contains a very coarsely meshed 2d half-model of a 
+   symmetric beam loaded at the symmetry plane.
+   A detailed describtion of this particular problem is provided 
+   (in german) in chapter 12 of my master's thesis, see p. 53 in 
+   Diplomarbeit_Daum.pdf.
 	 
    Feel free to try the other input examples,
    however, the postprocessing routine is preconfigured for the
-   cantilever example.
+   beam example.
 
-3. frame = post(a, 40)
+3. frame = post(a, 5)
    Display the results by the integrated 2d postprocessing routine. 
-   For 3d problems the open source programm GiD can be used
+   (For 3d problems the open source programm GiD can be used)
+   postprocessing takes about 15 secs.
 
-   for the example 'cantilever_lin_quad_lag23.xml'
-   the result should look like ./figures/collapse_quad-2010-05-14_3x4-crop.pdf
+   The undeformed configuration is shown in blue and the deformed 
+   configuration in red. The deformation is scaled by a factor of 100.
 
+   In the output, nodes are displayed as circles and Integration points
+   as rhomboids. Filled rhomboides indicate yielding in the respective 
+   integration point. the elastic elements are fully integrated and extra
+   integration points were added to the yielding elements. The used 
+   elements are of the Lagrange class with a center node.
+
+   BCs are indicated by triangles at the nodal position,
+   red for displacement Bcs and blue for force BCs. The orientation of
+   the triangle indicates the orientation of the BC.
+
+   
