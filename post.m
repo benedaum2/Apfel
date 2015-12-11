@@ -13,8 +13,8 @@ scale = 1e2; %sample
 % scale = 0e1;
 show_node_number  = 0;
 show_mat          = 1;
-show_mat_gauss    = 1;
-show_spa          = 0;
+show_mat_gauss    = 0;
+show_spa          = 1;
 show_spa_gauss    = 0;
 show_spa_sigma    = 0; % elastic
 show_pp_kappa     = 0;
@@ -121,16 +121,17 @@ end
 
 time = a.getTime(inc_num);
 
-% text('Position', [0, 60], 'String', horzcat('time:  ', num2str(time,  '%.4f')));
-% text('Position', [0, 40], 'String', horzcat('scale: ', num2str(scale, '%.2e')));
+% text('Position', [0, -30], 'String', horzcat('time:  ', num2str(time,  '%.4f')));
+text('Position', [0, -30], 'String', horzcat('increment:  ', num2str(inc_num,  '%u')));
+text('Position', [0, -34], 'String', horzcat('scale: ', num2str(scale, '%.2e')));
 
 % ring
 % text('Position', [5, 10], 'String', horzcat('time:  ', num2str(time,  '%.4f')));
 % text('Position', [5,  5], 'String', horzcat('scale: ', num2str(scale, '%.2e')));
 
 % sample
-text('Position', [-180, -140], 'String', horzcat('time:  ', num2str(time,  '%.4f')));
-text('Position', [-180, -155], 'String', horzcat('scale: ', num2str(scale, '%.2e')));
+% text('Position', [-180, -140], 'String', horzcat('time:  ', num2str(time,  '%.4f')));
+% text('Position', [-180, -155], 'String', horzcat('scale: ', num2str(scale, '%.2e')));
 
 % alpha = time; %*(0.4000/0.3333);
 % text('Position', [2, 15], 'String', horzcat('time:  ', num2str(time,  '%.4f')));
